@@ -218,6 +218,10 @@ leftpane .menu-button:hover {
   font-size: 4.5vw;
 }
 
+leftpane a:hover {
+  text-decoration: none;
+}
+
 .sub-button:hover h3 {
   background-color: var(--3color);
   color: var(--5color);

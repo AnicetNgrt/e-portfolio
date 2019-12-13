@@ -250,9 +250,9 @@ rightpane {
 
 .hover-desc {
   display: none;
-  position: absolute;
-  top: 2%;
-  left: 100%;
+  position: sticky;
+  top: inherit;
+  left: inherit;
   z-index: 100;
   max-width: 40vw;
   width: max-content;
