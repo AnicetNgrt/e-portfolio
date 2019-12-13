@@ -279,9 +279,9 @@ rightpane {
   display: none;
   position: absolute;
   top: 80%;
-  left: 50%;
+  left: 20%;
   z-index: 100;
-  max-width: 100%;
+  max-width: 82%;
   width: max-content;
   font-size: 2vh;
   padding: 1vh 1vh 1vh 1vh;
