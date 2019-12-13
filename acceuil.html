@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+      <title>e-portfolio</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Inconsolata|Questrial|Roboto+Mono|Staatliches&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style-pc.css" media="only screen and (min-aspect-ratio: 1/1)"/>
+      <link rel="stylesheet" href="css/style-mobile.css" media="only screen and (max-aspect-ratio: 1/1)"/>
+  </head>
+  <body>
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <rightpane>
+      <div class="container articles">
+        <!-- Catégorie Articles -->
+        <div class="article-category">
+          <div class="row">
+            <h1 class="article-category-title">
+              <i class="material-icons">emoji_people</i>
+              Qui suis-je ?
+            </h1>
+          </div>
+          <!-- Article -->
+          <div class="row article-body">
+            <div class="col-3 article-vignette">
+              <img class="picture-shadow" src="assets/anicet.png" desc="Mon portrait"/>
+              <div class="hover-desc">
+                Mon portrait en format PNG affiché dans le "cmd" de windows 10, après
+                avoir été rapeticé et converti en texte par un moteur graphique 2D-ANSI
+                pour CLI que j'ai codé en Python. Un pixel devient donc deux espaces avec
+                un surlignage coloré.
+              </div>
+            </div>
+            <div class="col-8 article-content">
+              <p>
+                Je suis Anicet Nougaret, j'habite en France et j'ai 18 ans. En ce moment j'étudie l'informatique à
+                l'Institut Universitaire Technologique de Paris.
+                J'adore programmer depuis 4 ans déjà. J'aime aussi beaucoup lire, écrire, dessiner, débatre et
+                apprendre de nouvelles choses.
+              </p>
+            </div>
+          </div>
+          <!-- Fin Article -->
+        </div>
+        <!-- Fin Catégorie Articles -->
+        <!-- Catégorie Articles -->
+        <div class="article-category">
+          <div class="row">
+            <h1 class="article-category-title">
+              <i class="material-icons">
+                developer_board
+              </i>
+              À-propos de ce site
+            </h1>
+          </div>
+          <!-- Article -->
+          <div class="row article-body">
+            <div class="col-5 article-vignette">
+              <img class="picture-shadow" src="assets/capture_code.png" desc="Code source HTML"/>
+              <div class="hover-desc">
+                Pour écrite de l'HTML et du CSS j'utilise
+                <a href="https://atom.io/">
+                  Atom.
+                </a>
+              </div>
+            </div>
+            <div class="col-7 article-content">
+              <p>
+                Ce site est mon e-portfolio. Il contient plusieurs pages qui vous
+                permettent d'en savoir plus sur mes compétences, mes expériences professionnelles
+                et mes loisirs. Je l'ai crée dans le cadre d'un projet universtaire.
+              </p>
+              <p>
+                Pour le réaliser j'ai utilisé <a href="https://developer.mozilla.org/fr/docs/Web/Guide/HTML/HTML5">HTML 5</a>
+                , <a href="https://developer.mozilla.org/fr/docs/Web/CSS">CSS 3</a>, quelques utilitaires de la librairie
+                <a href="https://getbootstrap.com/">bootstrap 4</a> pour
+                gérer la taille des articles, et <a href="https://material.io/resources/icons/?style=baseline">google material design icons</a>
+                pour les icônes.
+              </p>
+              <p>
+                Vous aurez peut-être remarqué le menu situé à gauche, les articles et leur disposition en grille, ainsi
+                que les petites fenêtres qui s'ouvrent parfois quand vous placez votre pointeur sur les images. Ce sont
+                les éléments sur lesquels je me suis le plus attardé pendant la conception de ce site.
+              </p>
+            </div>
+          </div>
+          <!-- Fin Article -->
+        </div>
+        <!-- Fin Catégorie Articles -->
+        <!-- Catégorie Articles -->
+        <div class="article-category">
+          <div class="row">
+            <h1 class="article-category-title">
+              <i class="material-icons">
+                email
+              </i>
+              Me contacter
+            </h1>
+          </div>
+          <!-- Article -->
+          <div class="row article-body">
+            <div class="col-11 article-content">
+              <p>
+                Vous pouvez m'envoyer un email à :
+                <a href="anicet.nougaret@zohomail.eu">anicet.nougaret@zohomail.eu</a>
+              </p>
+            </div>
+          </div>
+          <!-- Fin Article -->
+        </div>
+        <!-- Fin Catégorie Articles -->
+      </div>
+    </rightpane>
+    <leftpane>
+      <h1 id="left_pane_barres">
+        <i class="material-icons">
+          menu
+        </i>
+        <span id="page-title">Acceuil</span>
+      </h1>
+      <a class="menu-box"></a>
+      <h1 id="Anicet">Anicet</h1>
+      <h1 id="Nougaret">Nougaret</h1>
+      <nav>
+        <ul id="nav-box">
+          <!-- Bouton menu -->
+          <li>
+            <a class="menu-button" href="acceuil.html">
+              <h2><i class="material-icons">
+                home
+              </i>
+              Acceuil</h2>
+            </a>
+            <ul class="sub">
+              <li>
+                <a class="sub-button"><h3>Qui suis-je ?</h3></a>
+              </li>
+              <li>
+                <a class="sub-button"><h3>À propos du site</h3></a>
+              </li>
+              <li>
+                <a class="sub-button"><h3>Contact</h3></a>
+              </li>
+            </ul>
+          </li>
+          <!-- Fin Bouton menu -->
+          <!-- Bouton menu -->
+          <li>
+            <a class="menu-button" href="compétences.html">
+              <h2><i class="material-icons">
+                emoji_objects
+              </i>
+              Compétences</h2>
+            </a>
+            <ul class="sub">
+              <li>
+                <a class="sub-button"><h3>Programmation impérative</h3></a>
+              </li>
+              <li>
+                <a class="sub-button"><h3>Programmation orientée objet</h3></a>
+              </li>
+              <li>
+                <a class="sub-button"><h3>Applications réseau et web</h3></a>
+              </li>
+              <li>
+                <a class="sub-button"><h3>Création de sites web</h3></a>
+              </li>
+            </ul>
+          </li>
+          <!-- Fin Bouton menu -->
+          <!-- Bouton menu -->
+          <li>
+            <a class="menu-button" href="loisirs.html">
+              <h2><i class="material-icons">
+                edit
+              </i>
+              Blog</h2>
+            </a>
+            <ul class="sub">
+              <li>
+                <a class="sub-button"><h3>Projets artistiques</h3></a>
+              </li>
+              <li>
+                <a class="sub-button"><h3>Jeu de go</h3></a>
+              </li>
+              <li>
+                <a class="sub-button"><h3>Zugzwang</h3></a>
+              </li>
+              <li>
+                <a class="sub-button"><h3>Lectures</h3></a>
+              </li>
+            </ul>
+          </li>
+          <!-- Fin Bouton menu -->
+          <!-- Bouton menu -->
+          <li>
+            <a class="menu-button" href="expériences.html">
+              <h2><i class="material-icons">
+                work
+              </i>
+              Expériences</h2>
+            </a>
+            <ul class="sub">
+              <li>
+                <a class="sub-button"><h3>Stages en entreprise</h3></a>
+              </li>
+              <li>
+                <a class="sub-button"><h3>Baccalauréat et études</h3></a>
+              </li>
+              <li>
+                <a class="sub-button"><h3>Langues et voyages à l'étranger</h3></a>
+              </li>
+            </ul>
+          </li>
+          <!-- Fin Bouton menu -->
+        </ul>
+      </nav>
+    </leftpane>
+  </body>
+</html>
