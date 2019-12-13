@@ -61,17 +61,10 @@ leftpane .menu-box{
   background-color: none;
 }
 
-
-/*leftpane:hover .menu-box {
-  transition: opacity 0.3s;
-  opacity: 1;
-  background-color: var(--1color);
-}*/
-
 leftpane h1 {
   float: left;
   margin-top: 2vw;
-  margin-left: 2vw;
+  margin-left: 1vw;
   padding-left: 2vw;
   color: var(--2color);
   background-color: var(--3color);
@@ -92,24 +85,6 @@ leftpane h1 {
 #Anicet {
   margin-right: 2vw;
 }
-
-/*leftpane:hover #Anicet, leftpane:hover #Nougaret {
-  float: left;
-  opacity: 1;
-  background-color: var(--2color);
-  margin-top: 1vw;
-  margin-left: 3vw;
-  font-size: 7vw;
-  color: var(--4color);
-}
-
-leftpane:hover #barres {
-  color: var(--4color);
-}
-
-leftpane:hover #barres {
-  opacity: 0;
-}*/
 
 #barres {
   opacity: 0.7;
@@ -164,7 +139,7 @@ leftpane .menu-button {
   color: var(--2color);
   opacity: 0;
   position: relative;
-  width: 40vw;
+  width: 40.1vw;
   padding-left: 2vw;
   padding-top: 2vw;
   padding-bottom: 2vw;
@@ -184,20 +159,17 @@ leftpane .menu-button h2 {
 }
 
 leftpane .menu-button:hover {
+  border-left: solid 1vw var(--4color);
   background-color: var(--2color);
   color: var(--4color);
 }
 
 .sub {
-  box-shadow: 0vw 0 1vw var(--3color);
+  box-shadow: 0vw 0 1vw var(--2color);
   transition: margin-left 1s, opacity 0.3s;
   opacity: 0;
   position: absolute;
   background-color: var(--2color);
-  /*border: solid 2vh var(--3color);
-  border-top: 0;
-  border-left: 0;
-  border-bottom: 0;*/
   top: 0vw;
   left: 40vw;
   width: fit-content;
@@ -265,6 +237,7 @@ rightpane {
   /*background-color: var(--2color);*/
   padding: 10vw 1vw 1vw 1vw;
   margin-bottom: 10vw;
+  font-weight: 900;
 }
 
 .article-body {
@@ -275,7 +248,9 @@ rightpane {
   padding: 1vw 1.5vw 1vw 1.5vw;
   margin-left: -1vw;
   font-size: 4vw;
-  color: var(--5color);
+  color: var(--4color);
+  border-left: solid 1vw var(--4color);
+  box-shadow: 0vw 0 1vw var(--2color);
   max-width: calc(100% + 1vw);
   width: max-content;
   font-weight: bolder;
@@ -290,12 +265,8 @@ rightpane {
   border-radius: 0.3vh;
   padding: 1vw 1vw 2vw 2vw;
   margin-bottom: 3vw;
-}
-
-.article-content {
   color: var(--2color);
   font-weight: 500;
-  border-radius: 0.3vh;
   line-height: 6vw;
   font-size: 4vw;
 }

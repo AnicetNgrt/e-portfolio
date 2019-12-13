@@ -109,8 +109,10 @@ leftpane .menu-button h2 {
 }
 
 leftpane .menu-button:hover {
+  box-shadow: 0vh 0 1vh var(--2color);
   transition: color 0.1s;
   background-color: var(--2color);
+  border-left: solid 1vh var(--4color);
   color: var(--4color);
 }
 
@@ -120,10 +122,6 @@ leftpane .menu-button:hover {
   display: none;
   position: absolute;
   background-color: var(--2color);
-  /*border: solid 2vh var(--3color);
-  border-top: 0;
-  border-left: 0;
-  border-bottom: 0;*/
   top: 22vh;
   left: 40vh;
   width: fit-content;
@@ -169,8 +167,8 @@ rightpane {
 
 .articles {
   margin-left: 2%;
-  margin-right: 2%;
-  width: 96%;
+  margin-right: 3%;
+  width: 95%;
 }
 
 .article-category {
@@ -186,6 +184,7 @@ rightpane {
   /*background-color: var(--2color);*/
   padding: 1vh 1vh 1vh 1vh;
   margin-bottom: 10vh;
+  font-weight: 900;
 }
 
 .article-body {
@@ -196,7 +195,9 @@ rightpane {
   padding: 1vh 1.5vh 1vh 1.5vh;
   margin-left: -1vh;
   font-size: 4vh;
-  color: var(--5color);
+  color: var(--4color);
+  border-left: solid 1vh var(--4color);
+  box-shadow: 0vw 0 1vh var(--2color);
   max-width: calc(100% + 1vh);
   width: max-content;
   font-weight: bolder;
@@ -211,12 +212,8 @@ rightpane {
   border-radius: 0.3vw;
   padding: 1vh 1vh 2vh 2vh;
   margin-bottom: 3vh;
-}
-
-.article-content {
   color: var(--2color);
   font-weight: 500;
-  border-radius: 0.3vw;
   line-height: 5vh;
   font-size: 3vh;
 }
