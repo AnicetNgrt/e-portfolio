@@ -281,6 +281,9 @@ td {
 .lighter {
   background-color: #cfc3b3;
 }
+.table-category.lighter {
+  background-color: #1b6167;
+}
 
 .table-container.right-handed td {
   border-right: solid 0.2vh var(--2color);

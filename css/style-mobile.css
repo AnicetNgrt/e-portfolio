@@ -339,6 +339,9 @@ td .material-icons {
 .lighter {
   background-color: #cfc3b3;
 }
+.table-category.lighter {
+  background-color: #1b6167;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 2.3rem;
