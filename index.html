@@ -16,7 +16,7 @@
     <script src="bootstrap/js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <rightpane>
-      <div class="container articles">
+      <div class="container-fluid articles">
         <!-- Catégorie Articles -->
         <div class="article-category" id="anicet">
           <div class="row">
@@ -117,109 +117,110 @@
       </div>
     </rightpane>
     <leftpane>
-      <h1 id="left_pane_barres">
-        <i class="material-icons" id="open-menu">
-          menu
-        </i>
-        <span id="page-title">Acceuil</span>
-      </h1>
-      <a class="menu-box"></a>
       <h1 id="Anicet">Anicet</h1>
       <h1 id="Nougaret">Nougaret</h1>
-      <nav>
-        <ul id="nav-box">
-          <!-- Bouton menu -->
-          <li>
-            <a class="menu-button">
-              <h2><i class="material-icons">
-                home
-              </i>
-              Acceuil</h2>
-            </a>
-            <ul class="sub">
-              <li>
-                <a class="sub-button" href="index.html#anicet"><h3>Qui suis-je ?</h3></a>
-              </li>
-              <li>
-                <a class="sub-button" href="index.html#à-propos"><h3>À propos du site</h3></a>
-              </li>
-              <li>
-                <a class="sub-button" href="index.html#contact"><h3>Contact</h3></a>
-              </li>
-            </ul>
-          </li>
-          <!-- Fin Bouton menu -->
-          <!-- Bouton menu -->
-          <li>
-            <a class="menu-button" href="compétences.html">
-              <h2><i class="material-icons">
-                emoji_objects
-              </i>
-              Compétences</h2>
-            </a>
-            <ul class="sub">
-              <li>
-                <a class="sub-button"><h3>Programmation impérative</h3></a>
-              </li>
-              <li>
-                <a class="sub-button"><h3>Programmation orientée objet</h3></a>
-              </li>
-              <li>
-                <a class="sub-button"><h3>Applications réseau et web</h3></a>
-              </li>
-              <li>
-                <a class="sub-button"><h3>Création de sites web</h3></a>
-              </li>
-            </ul>
-          </li>
-          <!-- Fin Bouton menu -->
-          <!-- Bouton menu -->
-          <li>
-            <a class="menu-button">
-              <h2><i class="material-icons">
-                edit
-              </i>
-              Blog</h2>
-            </a>
-            <ul class="sub">
-              <li>
-                <a class="sub-button" href="loisirs.html#art"><h3>Projets artistiques</h3></a>
-              </li>
-              <li>
-                <a class="sub-button" href="loisirs.html#go"><h3>Jeu de go</h3></a>
-              </li>
-              <li>
-                <a class="sub-button" href="loisirs.html#zugzwang"><h3>Zugzwang</h3></a>
-              </li>
-              <li>
-                <a class="sub-button" href="loisirs.html#lectures"><h3>Lectures</h3></a>
-              </li>
-            </ul>
-          </li>
-          <!-- Fin Bouton menu -->
-          <!-- Bouton menu -->
-          <li>
-            <a class="menu-button" href="expériences.html">
-              <h2><i class="material-icons">
-                work
-              </i>
-              Expériences</h2>
-            </a>
-            <ul class="sub">
-              <li>
-                <a class="sub-button"><h3>Stages en entreprise</h3></a>
-              </li>
-              <li>
-                <a class="sub-button"><h3>Baccalauréat et études</h3></a>
-              </li>
-              <li>
-                <a class="sub-button"><h3>Langues et voyages à l'étranger</h3></a>
-              </li>
-            </ul>
-          </li>
-          <!-- Fin Bouton menu -->
-        </ul>
-      </nav>
+      <div id="barres">
+        <h1>
+          <i class="material-icons" id="open-menu">
+            menu
+          </i>
+          <span id="page-title">Acceuil</span>
+        </h1>
+        <nav id="nav-box">
+          <ul>
+            <!-- Bouton menu -->
+            <li>
+              <a class="menu-button">
+                <h2><i class="material-icons">
+                  home
+                </i>
+                Acceuil</h2>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a class="sub-button" href="index.html#anicet"><h3>Qui suis-je ?</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button" href="index.html#à-propos"><h3>À propos du site</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button" href="index.html#contact"><h3>Contact</h3></a>
+                </li>
+              </ul>
+            </li>
+            <!-- Fin Bouton menu -->
+            <!-- Bouton menu -->
+            <li>
+              <a class="menu-button" href="compétences.html">
+                <h2><i class="material-icons">
+                  emoji_objects
+                </i>
+                Compétences</h2>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a class="sub-button"><h3>Programmation impérative</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button"><h3>Programmation orientée objet</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button"><h3>Applications réseau et web</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button"><h3>Création de sites web</h3></a>
+                </li>
+              </ul>
+            </li>
+            <!-- Fin Bouton menu -->
+            <!-- Bouton menu -->
+            <li>
+              <a class="menu-button" href="expériences.html">
+                <h2><i class="material-icons">
+                  work
+                </i>
+                Expériences</h2>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a class="sub-button"><h3>Stages en entreprise</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button"><h3>Baccalauréat et études</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button"><h3>Langues et voyages à l'étranger</h3></a>
+                </li>
+              </ul>
+            </li>
+            <!-- Fin Bouton menu -->
+            <!-- Bouton menu -->
+            <li>
+              <a class="menu-button">
+                <h2><i class="material-icons">
+                  edit
+                </i>
+                Blog</h2>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a class="sub-button" href="loisirs.html#art"><h3>Projets artistiques</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button" href="loisirs.html#go"><h3>Jeu de go</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button" href="loisirs.html#zugzwang"><h3>Zugzwang</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button" href="loisirs.html#lectures"><h3>Lectures</h3></a>
+                </li>
+              </ul>
+            </li>
+            <!-- Fin Bouton menu -->
+          </ul>
+        </nav>
+      </div>
     </leftpane>
   </body>
 </html>

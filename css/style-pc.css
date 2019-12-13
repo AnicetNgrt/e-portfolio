@@ -10,6 +10,10 @@
   --5color: #ffffff;
 }
 
+.pc-hide {
+  display: none;
+}
+
 a:link {
   display: inline;
   font-size: inherit;
@@ -45,24 +49,6 @@ leftpane {
   width: 40vh;
 }
 
-leftpane .menu-box{
-  position: absolute;
-  z-index: -2;
-  top: 0vw;
-  height: 100vh;
-  width: 40vh;
-  transition: opacity 0.3s;
-  opacity: 0;
-  background-color: var(--1color);
-  box-shadow: -1.5vh 0 3vh var(--1color);
-}
-
-
-leftpane:hover .menu-box {
-  transition: opacity 0.3s;
-  opacity: 1;
-}
-
 leftpane h1 {
   float: left;
   margin-top: 2vh;
@@ -82,32 +68,12 @@ leftpane h1 {
   font-weight: bold;
 }
 
-leftpane:hover #Anicet, leftpane:hover #Nougaret {
-  background-color: var(--2color);
-  color: var(--4color);
+#Nougaret {
+  margin-bottom: 3vh;
 }
 
-leftpane:hover #left_pane_barres {
-  opacity: 0;
-}
-
-#left_pane_barres {
-  position: absolute;
-  left: -1vw;
-  top: 20vh;
-  background-color: rgba(0, 0, 0, 0);
-  display: block;
-  color: var(--3color);
-  border-radius: 0.3vw;
-  font-size: 9vh;
-}
-
-#open-menu {
-  font-size: 9vh;
-}
-
-leftpane:hover #open-menu {
-  font-size: 0vh;
+#barres h1 {
+  display: none;
 }
 
 #page-title {
@@ -120,15 +86,14 @@ leftpane li {
 }
 
 leftpane .menu-button {
+  transition: color 0.3s;
   float: left;
   text-decoration: none;
-  transition: opacity 0s;
   background-color: rgba(0, 0, 0, 0);
-  color: var(--0color);
-  opacity: 0;
+  color: var(--3color);
   position: relative;
   width: 38vh;
-  margin-top: 2vh;
+  margin-top: 0vh;
   margin-left: 2vh;
   padding-left: 2vh;
   padding-top: 1vh;
@@ -143,32 +108,26 @@ leftpane .menu-button h2 {
   font-size: 4vh;
 }
 
-leftpane:hover .menu-button {
-  transition: opacity 0s;
-  opacity: 1;
-  margin-left: 2vh;
-}
-
 leftpane .menu-button:hover {
+  transition: color 0.1s;
   background-color: var(--2color);
   color: var(--4color);
 }
 
 .sub {
-  box-shadow: -1vh 0 3vh var(--2color);
-  transition: margin-left 1s, opacity 0.3s;
+  box-shadow: 0vh 0 1vh var(--2color);
   z-index: -15;
-  opacity: 0;
+  display: none;
   position: absolute;
   background-color: var(--2color);
   /*border: solid 2vh var(--3color);
   border-top: 0;
   border-left: 0;
   border-bottom: 0;*/
-  top: 0vh;
-  width: 30vh;
-  height: 100vh;
-  margin-left: -32vh;
+  top: 22vh;
+  left: 40vh;
+  width: fit-content;
+  height: auto;
   border-bottom-right-radius: 0.3vw;
   border-top-right-radius: 0.3vw;
 }
@@ -190,10 +149,12 @@ leftpane .menu-button:hover {
   color: var(--5color);
 }
 
+leftpane a:hover {
+  text-decoration: none;
+}
+
 leftpane li:hover .sub, .sub:hover {
-  transition: margin-left 0.2s, opacity 0.1s;
-  margin-left: 40vh;
-  opacity: 1;
+  display: block;
 }
 
 rightpane {
@@ -203,9 +164,13 @@ rightpane {
   width: calc(100vw - 40vh);
   height: fit-content;
   padding-top: 7vh;
-  padding-left: 7vh;
-  padding-right: 7vh;
   background-color: var(--3color);
+}
+
+.articles {
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
 }
 
 .article-category {
@@ -286,10 +251,10 @@ rightpane {
 .hover-desc {
   display: none;
   position: absolute;
-  top: 80%;
-  left: 20%;
+  top: 2%;
+  left: 100%;
   z-index: 100;
-  max-width: 82%;
+  max-width: 40vw;
   width: max-content;
   font-size: 2vh;
   padding: 1vh 1vh 1vh 1vh;

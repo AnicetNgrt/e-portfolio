@@ -10,6 +10,10 @@
   --5color: #ffffff;
 }
 
+.mobile-hide {
+  display: none;
+}
+
 a:link {
   display: inline;
   font-size: inherit;
@@ -58,11 +62,11 @@ leftpane .menu-box{
 }
 
 
-leftpane:hover .menu-box {
+/*leftpane:hover .menu-box {
   transition: opacity 0.3s;
   opacity: 1;
   background-color: var(--1color);
-}
+}*/
 
 leftpane h1 {
   float: left;
@@ -89,7 +93,7 @@ leftpane h1 {
   margin-right: 2vw;
 }
 
-leftpane:hover #Anicet, leftpane:hover #Nougaret {
+/*leftpane:hover #Anicet, leftpane:hover #Nougaret {
   float: left;
   opacity: 1;
   background-color: var(--2color);
@@ -99,15 +103,15 @@ leftpane:hover #Anicet, leftpane:hover #Nougaret {
   color: var(--4color);
 }
 
-leftpane:hover #left_pane_barres {
+leftpane:hover #barres {
   color: var(--4color);
 }
 
-leftpane:hover #left_pane_barres {
+leftpane:hover #barres {
   opacity: 0;
-}
+}*/
 
-#left_pane_barres {
+#barres {
   opacity: 0.7;
   position: absolute;
   left: 0;
@@ -133,14 +137,18 @@ leftpane:hover #left_pane_barres {
   top: 12vw;
   left: 0;
   width: 40vw;
-  height: 39vh;
-  background-color: var(--1color);
-  border-bottom-left-radius: 0.3vh;
+  height: auto;
+  background-color: var(--3color);
+  border-radius: 0.3vh;
+  box-shadow: 0 0 1vw var(--2color);
 }
 
-leftpane:hover #nav-box {
+#barres:hover {
+  opacity: 1;
+}
+
+#barres:hover > #nav-box {
   margin-top: 0vh;
-  box-shadow: 0 0 1vw var(--1color);
 }
 
 leftpane li {
@@ -153,7 +161,7 @@ leftpane .menu-button {
   text-decoration: none;
   transition: opacity 0s;
   background-color: rgba(0, 0, 0, 0);
-  color: var(--4color);
+  color: var(--2color);
   opacity: 0;
   position: relative;
   width: 40vw;
@@ -170,7 +178,7 @@ leftpane .menu-button h2 {
   font-size: 4.5vw;
 }
 
-leftpane:hover .menu-button {
+#barres:hover .menu-button {
   transition: opacity 0s;
   opacity: 1;
 }
@@ -181,7 +189,7 @@ leftpane .menu-button:hover {
 }
 
 .sub {
-  box-shadow: -1vw 0 3vw var(--1color);
+  box-shadow: 0vw 0 1vw var(--3color);
   transition: margin-left 1s, opacity 0.3s;
   opacity: 0;
   position: absolute;
@@ -192,10 +200,10 @@ leftpane .menu-button:hover {
   border-bottom: 0;*/
   top: 0vw;
   left: 40vw;
-  width: 60vw;
-  height: 39vh;
+  width: fit-content;
+  height: auto;
   margin-top: -100vh;
-  border-bottom-right-radius: 0.3vh;
+  border-radius: 0.3vh;
 }
 
 .sub-button h3 {
@@ -224,14 +232,20 @@ leftpane li:hover .sub, .sub:hover {
 rightpane {
   z-index: -16;
   position:absolute;
-  top: 12vw;
+  top: 0vw;
   left: 0vw;
   width: 100vw;
   height: fit-content;
   padding-top: 7vw;
-  padding-left: 3vw;
-  padding-right: 7vw;
+  padding-left: 0;
+  padding-right: 0;
   background-color: var(--3color);
+}
+
+.articles {
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
 }
 
 .article-category {
@@ -245,7 +259,7 @@ rightpane {
   font-weight: bolder;
   border-radius: 0.3vh;
   /*background-color: var(--2color);*/
-  padding: 1vw 1vw 1vw 1vw;
+  padding: 10vw 1vw 1vw 1vw;
   margin-bottom: 10vw;
 }
 
@@ -315,9 +329,9 @@ rightpane {
   top: 80%;
   left: 20%;
   z-index: 100;
-  max-width: 82%;
+  max-width: 40vh;
   width: max-content;
-  font-size: 4vw;
+  font-size: 3vw;
   padding: 1vw 1vw 1vw 1vw;
   border-bottom: solid 1vw var(--0color);
   color: var(--0color);
