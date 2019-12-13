@@ -31,7 +31,7 @@ body {
   width: 100%;
   font-size: 100%;
   overflow-x: hidden;
-  background-color: var(--0color);
+  background-color: var(--2color);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -54,8 +54,7 @@ leftpane .menu-box{
   width: 100vw;
   transition: opacity 0.3s;
   opacity: 1;
-  background-color: var(--0color);
-  box-shadow: 0 0 1vw var(--1color);
+  background-color: none;
 }
 
 
@@ -67,7 +66,7 @@ leftpane:hover .menu-box {
 
 leftpane h1 {
   float: left;
-  margin-top: 3vw;
+  margin-top: 2vw;
   margin-left: 2vw;
   padding-left: 2vw;
   color: var(--2color);
@@ -80,12 +79,23 @@ leftpane h1 {
   font-weight: bold;
 }
 
+#Anicet, #Nougaret {
+  opacity: 0.7;
+  padding-top: 0.5vh; padding-bottom: 0.5vh;
+  float: right;
+}
+
 #Anicet {
-  margin-left: 45vw;
+  margin-right: 2vw;
 }
 
 leftpane:hover #Anicet, leftpane:hover #Nougaret {
+  float: left;
+  opacity: 1;
   background-color: var(--2color);
+  margin-top: 1vw;
+  margin-left: 3vw;
+  font-size: 7vw;
   color: var(--4color);
 }
 
@@ -93,33 +103,21 @@ leftpane:hover #left_pane_barres {
   color: var(--4color);
 }
 
-leftpane:hover #page-title {
+leftpane:hover #left_pane_barres {
   opacity: 0;
 }
 
 #left_pane_barres {
+  opacity: 0.7;
   position: absolute;
-  left: -1vh;
-  top: -1vw;
-  background-color: rgba(0, 0, 0, 0);
+  left: 0;
+  top: 0;
   display: block;
-  color: var(--3color);
+  color: var(--2color);
   border-radius: 0.3vh;
 }
 
 #open-menu {
-  font-size: 8vw;
-}
-
-#close-menu {
-  font-size: 0vw;
-}
-
-leftpane:hover #open-menu {
-  font-size: 0vw;
-}
-
-leftpane:hover #close-menu {
   font-size: 8vw;
 }
 
@@ -226,7 +224,7 @@ leftpane li:hover .sub, .sub:hover {
 rightpane {
   z-index: -16;
   position:absolute;
-  top: 6vh;
+  top: 12vw;
   left: 0vw;
   width: 100vw;
   height: fit-content;

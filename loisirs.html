@@ -18,7 +18,7 @@
     <rightpane>
       <div class="container articles">
         <!-- Catégorie Articles -->
-        <div class="article-category">
+        <div class="article-category" id="art">
           <div class="row">
             <h1 class="article-category-title">
               <i class="material-icons">palette</i>
@@ -120,7 +120,7 @@
             </h1>
           </div>
           <!-- Article -->
-          <div class="row article-body">
+          <div class="row article-body" id="go">
             <div class="col-xl-9 col-lg-10 col-md-11 col-sm-12 article-content">
               <h1 class="article-title">
                 Jeu de go
@@ -211,7 +211,7 @@
             </div>
 
             <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 article-content">
-              <h1 class="article-title">
+              <h1 class="article-title" id="zugzwang">
                 Zugzwang
               </h1>
               <p>
@@ -250,7 +250,7 @@
                 <img class="picture-shadow" src="assets/zug2.jpg" desc="zugzwang photo 2"/>
                 <div class="hover-desc">
                   <p>
-                    Quelques illustrations de cartes.
+                    Illustrations de cartes.
                   </p>
                   <p>
                     stylo à encre, env 8cm par 6cm
@@ -262,7 +262,7 @@
                 <img class="picture-shadow" src="assets/zug1.jpg" desc="zugzwang photo 1"/>
                 <div class="hover-desc">
                   <p>
-                    Quelques illustrations de cartes.
+                    Illustrations de cartes.
                   </p>
                   <p>
                     stylo à encre, env 8cm par 6cm
@@ -274,7 +274,7 @@
                 <img class="picture-shadow" src="assets/zug3.jpg" desc="zugzwang photo 3"/>
                 <div class="hover-desc">
                   <p>
-                    Quelques illustrations de cartes.
+                    Illustrations de cartes.
                   </p>
                   <p>
                     stylo à encre, env 8cm par 6cm
@@ -306,20 +306,19 @@
     </rightpane>
     <leftpane>
       <h1 id="left_pane_barres">
-        <i class="material-icons">
+        <i class="material-icons" id="open-menu">
           menu
         </i>
-        <span id="page-title">Blog</span>
+        <span id="page-title">Acceuil</span>
       </h1>
       <a class="menu-box"></a>
       <h1 id="Anicet">Anicet</h1>
       <h1 id="Nougaret">Nougaret</h1>
-      <h1 class="page-title"></h1>
       <nav>
         <ul id="nav-box">
           <!-- Bouton menu -->
           <li>
-            <a class="menu-button" href="index.html">
+            <a class="menu-button">
               <h2><i class="material-icons">
                 home
               </i>
@@ -327,13 +326,13 @@
             </a>
             <ul class="sub">
               <li>
-                <a class="sub-button"><h3>Qui suis-je ?</h3></a>
+                <a class="sub-button" href="index.html#anicet"><h3>Qui suis-je ?</h3></a>
               </li>
               <li>
-                <a class="sub-button"><h3>À propos du site</h3></a>
+                <a class="sub-button" href="index.html#à-propos"><h3>À propos du site</h3></a>
               </li>
               <li>
-                <a class="sub-button"><h3>Contact</h3></a>
+                <a class="sub-button" href="index.html#contact"><h3>Contact</h3></a>
               </li>
             </ul>
           </li>
@@ -364,7 +363,7 @@
           <!-- Fin Bouton menu -->
           <!-- Bouton menu -->
           <li>
-            <a class="menu-button" href="loisirs.html">
+            <a class="menu-button">
               <h2><i class="material-icons">
                 edit
               </i>
@@ -372,16 +371,16 @@
             </a>
             <ul class="sub">
               <li>
-                <a class="sub-button"><h3>Projets artistiques</h3></a>
+                <a class="sub-button" href="loisirs.html#art"><h3>Projets artistiques</h3></a>
               </li>
               <li>
-                <a class="sub-button"><h3>Jeu de go</h3></a>
+                <a class="sub-button" href="loisirs.html#go"><h3>Jeu de go</h3></a>
               </li>
               <li>
-                <a class="sub-button"><h3>Zugzwang</h3></a>
+                <a class="sub-button" href="loisirs.html#zugzwang"><h3>Zugzwang</h3></a>
               </li>
               <li>
-                <a class="sub-button"><h3>Lectures</h3></a>
+                <a class="sub-button" href="loisirs.html#lectures"><h3>Lectures</h3></a>
               </li>
             </ul>
           </li>
