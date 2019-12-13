@@ -337,7 +337,7 @@ td .material-icons {
 }
 
 .lighter {
-  filter: brightness(105%);
+  background-color: #cfc3b3;
 }
 
 h1, h2, h3, h4, h5, h6 {

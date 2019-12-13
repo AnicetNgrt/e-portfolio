@@ -278,6 +278,10 @@ td {
   font-size: 1.5vw;
 }
 
+.lighter {
+  background-color: #cfc3b3;
+}
+
 .table-container.right-handed td {
   border-right: solid 0.2vh var(--2color);
 }
@@ -301,10 +305,6 @@ td .material-icons {
 .table-category {
   background-color: var(--2color);
   color: var(--4color);
-}
-
-.lighter {
-  filter: brightness(105%);
 }
 
 h1, h2, h3, h4, h5, h6 {
