@@ -3,6 +3,7 @@
 @import "articles-portrait.css";
 @import "table-portrait.css";
 @import "hover-desc-portrait.css";
+@import "formulaire-portrait.css";
 
 .portrait-hide {
   display: none;

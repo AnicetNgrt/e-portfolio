@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="fr">
+
+  <head>
+
+      <title>e-portfolio</title>
+      <meta charset="utf-8">
+
+      <!-- Bootstrap -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Polices d'écriture et icônes -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Inconsolata|Questrial|Roboto+Mono|Staatliches&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+      <!-- CSS commun global -->
+      <link rel="stylesheet" href="css/global-rules-vars.css"/>
+      <!-- CSS pour l'orientation paysage (ratio largeur/hauteur > 1) -->
+      <link rel="stylesheet" href="css/css-orientation-paysage/main-paysage.css" media="only screen and (min-aspect-ratio: 1/1)"/>
+      <!-- CSS pour l'orientation portrait (ratio largeur/hauteur < 1) -->
+      <link rel="stylesheet" href="css/css-orientation-portrait/main-portrait.css" media="only screen and (max-aspect-ratio: 1/1)"/>
+
+  </head>
+
+  <body>
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <rightpane>
+      <div class="container-fluid articles">
+        <!-- Catégorie Articles -->
+        <div class="article-category" id="impérative">
+          <div class="row">
+            <h1 class="article-category-title">
+              <i class="material-icons">assignment</i>
+              Programmation impérative
+            </h1>
+          </div>
+          <!-- Article -->
+          <h1 class="article-title">
+            Langage C
+          </h1>
+          <div class="row article">
+            <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 article-vignette">
+              <img class="picture-shadow" src="assets/tri_en_c.png" desc="tri shaker"/>
+              <div class="hover-desc">
+                Algorithme de tri shaker en C pour un projet universitaire
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+              <div class="article-content">
+                <p>
+                  Je programme en C depuis septembre 2019. C'est un langage que
+                  j'ai appris à l'université. J'ai notamment co-réalisé un interpréteur de commande
+                  permettant de faire la gestion d'une compétition de patinage de vitesse (scores, classements...).
+                  Je peux utiliser toutes les fonctionnalités de base, l'allocation dynamique de mémoire,
+                  et m'adapter aux librairies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Fin Article -->
+          <!-- Article -->
+          <h1 class="article-title">
+            Programmation impérative en C++
+          </h1>
+          <div class="row article">
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+              <div class="article-content">
+                <p>
+                  Je programme en C++ depuis Octobre 2019, mais je n'ai pas encore
+                  essayé les fonctionnalités de programmation orientée objet avec ce langage.
+                  Je peux pour l'instant m'adapter aux librairies, coder des types dynamiques
+                  comme des piles et des listes dynamiques, avec toutes les fonctionnalitées attendues :
+                  tri, suppression de doublons ...
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 article-vignette">
+              <img class="picture-shadow" src="assets/pathfinding.png" desc="recherche et destruction (non)"/>
+              <div class="hover-desc">
+                <p>
+                  Visualisation dans le terminal linux de l'exécution de mon algorithme
+                  de recherche de chemin (ou "pathfinding") codé en C++.
+                </p>
+                <p>
+                  Visualisation assurée par un autre
+                  programme en C++ faisant usage des codes de contrôle ANSI.
+                </p>
+                <p>
+                  La sorte de "cavité" aux murs bleux foncés que l'algorithme explore
+                  est, quant à elle, générée en Python par un autre de mes programmes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Fin Article -->
+        </div>
+        <!-- Fin Catégorie Articles -->
+        <!-- Catégorie Articles -->
+        <div class="article-category" id="impérative">
+          <div class="row">
+            <h1 class="article-category-title">
+              <i class="material-icons">account_tree</i>
+              Programmation orientée objet
+            </h1>
+          </div>
+          <!-- Article -->
+          <h1 class="article-title">
+            Python
+          </h1>
+          <div class="row article">
+            <div class="col-md-8 col-12">
+              <div class="article-content">
+                <p>
+                  Je programme en Python depuis septembre 2018. Je l'utilise très
+                  couramment et c'est mon langage préféré. Je l'utilise parfois
+                  pour automatiser certaines tâches redondantes. Par exemple, je génère
+                  mes jeux de donnée de test d'entrée en python pour mes projets universitaires (exemples
+                  <a href="https://repl.it/@AnicetN/jdt-generator">ici</a> et <a href="https://repl.it/@AnicetN/aMAZEing-generator">là</a>).
+                </p>
+                <p>
+                  J'ai aussi développé depuis Septembre un module faisant usage
+                  des fonctionnalités de la programmation orientée objet : Il s'agit
+                  d'un moteur graphique 2D couplé d'un moteur de jeux-vidéo en Python, et qui
+                  fait le rendu dans le terminal, à l'aide des codes de contrôle
+                  ANSI. Donc ça simule un écran très basse résolution dans le terminal.
+                  Ainsi, il contient des classes et des fonctions qui vous permettent
+                  de créer un jeu vidéo rétro et fluide qui se joue dans le "cmd" windows
+                  ou bien dans le terminal de linux. Ce module s'appelle <a href="https://github.com/AnicetNgrt/flore1">Flore 1</a>.
+                  J'ai aussi crée <a href="https://github.com/AnicetNgrt/flore1-paint">Flore1-Paint</a>,
+                  un logiciel complet de dessin et d'animation ASCII/ANSI/Pixel Art basé sur Flore1.
+                </p>
+                <p>
+                  Je peux donc utiliser toutes les fonctionnalitées de Python, et m'adapter
+                  aux librairies.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 article-vignette">
+              <img class="picture-shadow" src="assets/flore1.png" desc="logo flore1"/>
+              <div class="hover-desc">
+                Logo de <a href="https://github.com/AnicetNgrt/flore1">Flore 1</a>, mon moteur graphique 2D-ANSI en Python pour le terminal.
+              </div>
+            </div>
+          </div>
+          <!-- Fin Article -->
+          <!-- Article -->
+          <h1 class="article-title">
+            Javascript / Node.js
+          </h1>
+          <div class="row article">
+            <div class="col-md-8 col-12">
+              <div class="article-content">
+                <p>
+                  Je programme en Javascript depuis 2015. J'ai fait plusieurs jeux avec,
+                  mais étant mes premiers programmes (réalisés alors que j'avais 14-15 ans)
+                  ils n'étaient pas toujours très finis et soignés. Seulement, si vous
+                  voulez tester un de mes vieux jeux utilisant la librairie Javascript : <a href="https://phaser.io/">Phaser 2</a>
+                  vous le pouvez <a href="https://an-devhouse.itch.io/sad-robots-">ici</a>, mais je vous préviens, il doit rester
+                  des fautes d'anglais de quand j'avais 15 ans, et votre navigateur ne sera peut-être pas compatible.
+                </p>
+                <p>
+                  À part ça, j'ai aussi fait beaucoup de tchat bots servant à gérer des communautées sur la messagerie
+                  <a href="https://discordapp.com/"> Discord</a>, en utilisant <a href="https://discord.js.org/#/">discord.js</a>.
+                  Ces tchat bots utilisaient <a href="https://mongoosejs.com/">mongoose.js</a> permettant
+                  de faire le pont vers des bases de données de <a href="https://www.mongodb.com/fr"> Mongo Db</a>
+                  (<a href="https://github.com/AnicetNgrt/bot-infinity-old">exemple</a> qui date un peu).
+                  Je peux aussi me servir de <a href="https://nodejs.org/en/">Node.js</a>.
+                </p>
+                <p>
+                  Je peux donc autant utiliser Javascript pour faire des applications
+                  web, des jeux et des systèmes de client/serveur avec <a href="https://socket.io/">socket.io</a>.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 article-vignette">
+              <img class="" src="assets/node_socket_logo.png" desc="logo de socket.io"/>
+              <div class="hover-desc">
+                Logo de socket.io,
+                <a href="https://socket.io/">source de l'image</a>.
+              </div>
+            </div>
+          </div>
+          <!-- Fin Article -->
+        </div>
+        <!-- Fin Catégorie Articles -->
+
+      </div>
+    </rightpane>
+
+    <leftpane>
+      <h1 id="Anicet">Anicet</h1>
+      <h1 id="Nougaret">Nougaret</h1>
+      <div class="menu-container">
+        <h1>
+          <i class="material-icons" class="menu-barres">
+            menu
+          </i>
+          <span class="page-title">Compétences</span>
+        </h1>
+        <nav class="menu-nav">
+          <ul>
+            <!-- Bouton menu -->
+            <li>
+              <a class="menu-button">
+                <h2><i class="material-icons">
+                  home
+                </i>
+                Acceuil</h2>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a class="sub-button" href="index.html#anicet"><h3>Qui suis-je ?</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button" href="index.html#à-propos"><h3>À propos du site</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button" href="index.html#contact"><h3>Contact</h3></a>
+                </li>
+              </ul>
+            </li>
+            <!-- Fin Bouton menu -->
+            <!-- Bouton menu -->
+            <li>
+              <a class="menu-button">
+                <h2><i class="material-icons">
+                  emoji_objects
+                </i>
+                Compétences</h2>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a class="sub-button" href="compétences.html#imperative"><h3>Programmation impérative</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button" href="compétences.html#objet"><h3>Programmation orientée objet</h3></a>
+                </li>
+              </ul>
+            </li>
+            <!-- Fin Bouton menu -->
+            <!-- Bouton menu -->
+            <li>
+              <a class="menu-button">
+                <h2><i class="material-icons">
+                  work
+                </i>
+                Expériences</h2>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a class="sub-button" href="expériences.html#stages"><h3>Stages en entreprise</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button" href="expériences.html#études"><h3>Études et diplômes</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button" href="expériences.html#langues"><h3>Langues et voyages à l'étranger</h3></a>
+                </li>
+              </ul>
+            </li>
+            <!-- Fin Bouton menu -->
+            <!-- Bouton menu -->
+            <li>
+              <a class="menu-button">
+                <h2><i class="material-icons">
+                  edit
+                </i>
+                Blog</h2>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a class="sub-button" href="loisirs.html#art"><h3>Projets artistiques</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button" href="loisirs.html#go"><h3>Jeu de go</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button" href="loisirs.html#zugzwang"><h3>Zugzwang</h3></a>
+                </li>
+                <li>
+                  <a class="sub-button" href="loisirs.html#lectures"><h3>Lectures</h3></a>
+                </li>
+              </ul>
+            </li>
+            <!-- Fin Bouton menu -->
+          </ul>
+        </nav>
+      </div>
+    </leftpane>
+  </body>
+</html>

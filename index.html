@@ -76,7 +76,7 @@
             <div class="col-lg-5 article-vignette">
               <img class="picture-shadow" src="assets/capture_code.PNG" desc="Code source HTML"/>
               <div class="hover-desc">
-                Pour écrite de l'HTML et du CSS j'utilise
+                Pour écrire de l'HTML et du CSS j'utilise
                 <a href="https://atom.io/">
                   Atom.
                 </a>
@@ -109,7 +109,7 @@
         <div class="article-category" id="contact">
           <div class="row">
             <h1 class="article-category-title">
-              <a href="mailto:anicet.nougaret@zohomail.eu">
+              <a href="mailto:anicet.nougaret@zohomail.eu" style="color: var(--2color)">
                 <i class="material-icons">
                   email
                 </i>
@@ -119,10 +119,73 @@
           </div>
           <!-- Article -->
           <div class="row">
-            <div class="col-lg-7 article-content">
-              <p>
-                Bientôt un super formulaire !
-              </p>
+            <div class="col-xl-7 col-md-9 col-12">
+              <!-- Formulaire -->
+              <form class="form-container" id="formulaire">
+                <fieldset>
+                  <legend>
+                    <div class="hover-desc">
+                      Attention, il fonctionne.
+                    </div>
+                    Formulaire de contact
+                  </legend>
+                  <label for="nom">Nom</label>
+                  <input type="text" name="nom" id="nom" placeholder="Jeanne"/>
+                  <br />
+                  <label for="prenom">Prénom</label>
+                  <input type="text" name="prenom" id="prenom" placeholder="Dupont"/>
+                  <br />
+                  <label for="type">Vous-êtes</label>
+                  <select name="type" id="type">
+                      <option value="prof.">un professeur</option>
+                      <option value="étud.">un(e) étudiant(e)</option>
+                      <option value="pro.">un professionnel</option>
+                      <option value="n/a">autre</option>
+                  </select>
+                  <br />
+                  <label for="message">Message</label>
+                  <br />
+                  <textarea name="message" id="message"></textarea>
+                  <br />
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" />
+                  <br />
+                  <button type="submit" name="envoyer" id="submit-form">
+                    <i class="material-icons">
+                      send
+                    </i>
+                    Envoyer
+                  </button>
+                </fieldset>
+              </form>
+              <!-- Fin Formulaire -->
+              <!-- Un peu de Javascript pour faire marcher le formulaire -->
+              <!-- Les données du formulaire sont renvoyées vers un google sheet -->
+              <!-- Source du tutoriel utilisé : https://les-enovateurs.com/donnees-formulaire-html-google-sheet/ -->
+              <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+              <script type="text/javascript" src="js/jquery.serializeObject.min.js"></script>
+              <script type="text/javascript">
+                var $form = $('form#formulaire'),
+                    url = 'https://script.google.com/macros/s/AKfycbw0R9Ff0kaW61_e9VI4pH-VVFPaWSdizkKZfnweipE_55jkCh0/exec';
+
+                $('#submit-form').on('click', function(e) {
+                  e.preventDefault();
+                  var jqxhr = $.ajax({
+                    url: url,
+                    method: "GET",
+                    dataType: "json",
+                    data: $form.serializeObject()
+                  }).done(function(){
+                    $('#submit-form').html("C'est envoyé !");
+                    $('#submit-form').css("background-color","var(--3color)");
+                    $('#submit-form').css("color","var(--2color)");
+                    $('#submit-form').css("border-left","none");
+                    $('#submit-form').css("box-shadow","none");
+                    $('#submit-form').css("pointer-events","none");
+                  });
+                });
+              </script>
+              <!-- Fin du Javascript -->
             </div>
           </div>
           <!-- Fin Article -->
@@ -178,12 +241,6 @@
                 </li>
                 <li>
                   <a class="sub-button" href="compétences.html#objet"><h3>Programmation orientée objet</h3></a>
-                </li>
-                <li>
-                  <a class="sub-button" href="compétences.html#webapp"><h3>Applications réseau et web</h3></a>
-                </li>
-                <li>
-                  <a class="sub-button" href="compétences.html#sites"><h3>Création de sites web</h3></a>
                 </li>
               </ul>
             </li>

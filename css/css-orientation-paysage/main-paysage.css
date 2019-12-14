@@ -3,6 +3,7 @@
 @import "articles-paysage.css";
 @import "table-paysage.css";
 @import "hover-desc-paysage.css";
+@import "formulaire-paysage.css";
 
 .paysage-hide {
   display: none;

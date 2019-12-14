@@ -1,0 +1,88 @@
+.form-container {
+  box-shadow: 0 0 1vh var(--2color);
+  background-color: var(--2color);
+  border-left: solid 1vh var(--4color);
+  border-radius: 0.3vw;
+  padding: 3vh 3vh 3vh 3vh;
+  color: var(--4color);
+  font-weight: 500;
+  line-height: 4.1vh;
+  font-size: 2.8vh;
+  margin-bottom: 3vh;
+}
+
+form legend {
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  border-radius: 0.3vw;
+  margin-right: 2vh;
+  color: var(--4color);
+  font-weight: 700;
+  line-height: 4.1vh;
+  font-size: 4vh;
+  margin-bottom: 3vh;
+}
+
+form label {
+  text-align: right;
+  width: 20%;
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  border-radius: 0.3vw;
+  margin-right: 2vh;
+  color: var(--0color);
+  font-weight: 500;
+  line-height: 4.1vh;
+  font-size: 2.8vh;
+}
+
+form input, form textarea, form select {
+  border: none;
+  border-radius: 0.3vw;
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  background-color: var(--0color);
+  color: var(--2color);
+  font-weight: 500;
+  line-height: 4.1vh;
+  font-size: 3vh;
+  margin-bottom: 3vh;
+}
+
+form input {
+  width: 70%;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+  background-color: var(--4color);
+}
+
+form textarea {
+  width: 100%;
+  font-size: 2.5vh;
+}
+
+form button {
+  border: none;
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  border-radius: 0.3vw;
+  margin-right: 2vh;
+  background-color: var(--2color);
+  color: var(--4color);
+  border-left: solid 1vh var(--4color);
+  box-shadow: 0vw 0 1vh rgba(0,0,50,0.5);
+  font-weight: 500;
+  line-height: 4.1vh;
+  font-size: 2.8vh;
+}
+
+form button:hover {
+  background-color: var(--4color);
+  color: var(--2color);
+}
+
+form button:active {
+  transform: scale(1.1);
+}
+
+form button .material-icons {
+  vertical-align: middle;
+  font-size: 4vh;
+}
