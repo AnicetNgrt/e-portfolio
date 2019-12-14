@@ -23,6 +23,7 @@ form legend {
 }
 
 form label {
+  position: relative;
   text-align: right;
   width: 20%;
   padding: 0.5vh 1vh 0.5vh 1vh;
@@ -35,6 +36,7 @@ form label {
 }
 
 form input, form textarea, form select {
+  position: relative;
   border: none;
   border-radius: 0.3vw;
   padding: 0.5vh 1vh 0.5vh 1vh;
