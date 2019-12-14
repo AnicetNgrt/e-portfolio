@@ -137,10 +137,10 @@
                   <br />
                   <label for="type">Vous-êtes</label>
                   <select name="type" id="type">
-                      <option value="prof.">un professeur</option>
-                      <option value="étud.">un(e) étudiant(e)</option>
-                      <option value="pro.">un professionnel</option>
-                      <option value="n/a">autre</option>
+                    <option value="étud.">un(e) étudiant(e)</option>
+                    <option value="prof.">un professeur</option>
+                    <option value="pro.">un professionnel</option>
+                    <option value="n/a">autre</option>
                   </select>
                   <br />
                   <label for="message">Message</label>
@@ -176,7 +176,7 @@
                     dataType: "json",
                     data: $form.serializeObject()
                   }).done(function(){
-                    $('#submit-form').html("C'est envoyé !");
+                    $('#submit-form').html("<i class=\"material-icons\">done</i> C'est envoyé !");
                     $('#submit-form').css("background-color","var(--3color)");
                     $('#submit-form').css("color","var(--2color)");
                     $('#submit-form').css("border-left","none");
