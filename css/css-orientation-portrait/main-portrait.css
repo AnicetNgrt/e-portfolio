@@ -1,0 +1,9 @@
+@import "leftpane-portrait.css";
+@import "rightpane-portrait.css";
+@import "articles-portrait.css";
+@import "table-portrait.css";
+@import "hover-desc-portrait.css";
+
+.portrait-hide {
+  display: none;
+}

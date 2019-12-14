@@ -1,0 +1,36 @@
+.hover-desc {
+  opacity: 0.8;
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 7vw;
+  height: 7vw;
+  z-index: 1000;
+  font-size: 0vw;
+  padding: 1vw 1vw 1vw 1vw;
+  color: var(--2color);
+  border-radius: 0.3vh;
+  background-image: url("../../assets/comment-24px.svg");
+  background-size: 7vw 7vw;
+  background-repeat: no-repeat;
+  background-color: var(--0color);
+  box-shadow: 0 0 1vw var(--2color);
+}
+
+.hover-desc:hover {
+  background-color: var(--0color);
+  background-image: none;
+  border-bottom: solid 1vw var(--2color);
+  max-width: 40vw;
+  width: max-content;
+  height: auto;
+  opacity: 0.8;
+  font-size: 3vw;
+  opacity: 1;
+}
+
+*:hover > .hover-desc {
+  z-index: 100;
+  display: block;
+}

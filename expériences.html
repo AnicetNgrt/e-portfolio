@@ -1,18 +1,33 @@
 <!doctype html>
 <html lang="fr">
+
   <head>
+
       <title>e-portfolio</title>
       <meta charset="utf-8">
+
+      <!-- Bootstrap -->
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Polices d'écriture et icônes -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Inconsolata|Questrial|Roboto+Mono|Staatliches&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="css/style-pc.css" media="only screen and (min-aspect-ratio: 1/1)"/>
-      <link rel="stylesheet" href="css/style-mobile.css" media="only screen and (max-aspect-ratio: 1/1)"/>
+
+      <!-- CSS commun global -->
+      <link rel="stylesheet" href="css/global-rules-vars.css"/>
+      <!-- CSS pour l'orientation paysage (ratio largeur/hauteur > 1) -->
+      <link rel="stylesheet" href="css/css-orientation-paysage/main-paysage.css" media="only screen and (min-aspect-ratio: 1/1)"/>
+      <!-- CSS pour l'orientation portrait (ratio largeur/hauteur < 1) -->
+      <link rel="stylesheet" href="css/css-orientation-portrait/main-portrait.css" media="only screen and (max-aspect-ratio: 1/1)"/>
+
   </head>
+
   <body>
+
+    <!-- Bootstrap -->
     <script src="bootstrap/js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <rightpane>
@@ -26,21 +41,23 @@
             </h1>
           </div>
           <!-- Article -->
-          <div class="row article-body">
-            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 article-content">
+          <div class="row article">
+            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
               <h1 class="article-title">
                 2015 - Cité des Sciences et de l'Industrie
               </h1>
-              <p>
-                À la fin de mon année de 4eme au collège j'ai fait mon premier stage en entreprise.
-                J'effectuais ce stage dans le département de muséographie, mais je m'intéressais déjà
-                de près à l'informatique, donc j'en ai profité pour rencontrer les développeurs dans le
-                département de recherche et développement.
-              </p>
-              <p>
-                Ce premier stage m'a permis de me familiariser avec le monde de l'entreprise, et d'en
-                apprendre plus avec la routine et les outils des développeurs.
-              </p>
+              <div class="article-content">
+                <p>
+                  À la fin de mon année de 4eme au collège j'ai fait mon premier stage en entreprise.
+                  J'effectuais ce stage dans le département de muséographie, mais je m'intéressais déjà
+                  de près à l'informatique, donc j'en ai profité pour rencontrer les développeurs dans le
+                  département de recherche et développement.
+                </p>
+                <p>
+                  Ce premier stage m'a permis de me familiariser avec le monde de l'entreprise, et d'en
+                  apprendre plus avec la routine et les outils des développeurs.
+                </p>
+              </div>
             </div>
             <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12  article-vignette">
               <img class="picture-shadow" src="assets/cité.jpg" desc="cité des sciences"/>
@@ -53,21 +70,23 @@
           </div>
           <!-- Fin Article -->
           <!-- Article -->
-          <div class="row article-body">
-            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 article-content">
+          <div class="row article">
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
               <h1 class="article-title">
                 2017 - SOGETI
               </h1>
-              <p>
-                À la fin de mon année de 2nd au lycée j'ai eu l'opportunité d'effectuer un stage
-                de découverte dans une très grande entreprise du numérique. J'ai pu rencontrer
-                des développeurs de logiciels, des experts réseaux et télécoms, et même des
-                ingénieurs en cybersécurité.
-              </p>
-              <p>
-                Ce stage m'a fait découvrir le rôle des développeurs dans les grandes
-                entreprises et leurs méthodes de travail en équipe.
-              </p>
+              <div class=" article-content">
+                <p>
+                  À la fin de mon année de 2nd au lycée j'ai eu l'opportunité d'effectuer un stage
+                  de découverte dans une très grande entreprise du numérique. J'ai pu rencontrer
+                  des développeurs de logiciels, des experts réseaux et télécoms, et même des
+                  ingénieurs en cybersécurité.
+                </p>
+                <p>
+                  Ce stage m'a fait découvrir le rôle des développeurs dans les grandes
+                  entreprises et leurs méthodes de travail en équipe.
+                </p>
+              </div>
             </div>
             <div class="col-xl-6 col-lg-7 col-md-8 col-sm-9  article-vignette">
               <img class="" src="assets/sogeti.png" desc="logo sogeti"/>
@@ -90,53 +109,59 @@
             </h1>
           </div>
           <!-- Article -->
-          <div class="row article-body justify-content-between">
-            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 article-content">
+          <div class="row justify-content-between article">
+            <div class="article-body col-xl-4 col-lg-12 col-md-12 col-sm-12">
               <h1 class="article-title">
                 2012 à 1016 - Collège
               </h1>
-              <p>
-                J'ai effectué mon collège dans l'établissement privé Notre Dame de Lourdres
-                dans le 20e arrondissement de Paris. Au collège mes matières les plus fortes
-                étaient les Mathématiques, le Français, les Arts Plastiques et la Physique-Chimie.
-                À l'issue du collège j'ai obtenu mon brevet mention très bien.
-              </p>
+              <div class="article-content">
+                <p>
+                  J'ai effectué mon collège dans l'établissement privé Notre Dame de Lourdres
+                  dans le 20e arrondissement de Paris. Au collège mes matières les plus fortes
+                  étaient les Mathématiques, le Français, les Arts Plastiques et la Physique-Chimie.
+                  À l'issue du collège j'ai obtenu mon brevet mention très bien.
+                </p>
+              </div>
             </div>
-            <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12 article-content">
+            <div class="article-body col-xl-7 col-lg-12 col-md-12 col-sm-12">
               <h1 class="article-title">
                 2016 à 2019 - Lycée
               </h1>
-              <p>
-                J'ai préparé mon baccalauréat général scientifique, option sciences de la vie
-                et de la terre, et spécialité Mathématiques, au lycée privé Sainte Louise
-                dans le 20e arrondissement de Paris. Tout le long de mon lycée j'ai suivi
-                l'option Arts Plastiques, que j'ai présenté au baccalauréat. C'est au lycée
-                que j'ai découvert la programmation, notamment en développant des jeux en TI BASIC
-                pour les calculatrices de la marque Texas Instrument, et qui rencontrèrent un
-                certain succès dans ma promotion.
-              </p>
-              <p>
-                Mes matières les plus fortes étaient les
-                Mathématiques, les Arts Plastiques, la Littérature, et la Philosophie.
-                Et j'ai finalement obtenu mon bac général scientifique en 2019, avec mention
-                très bien.
-              </p>
+              <div class="article-content">
+                <p>
+                  J'ai préparé mon baccalauréat général scientifique, option sciences de la vie
+                  et de la terre, et spécialité Mathématiques, au lycée privé Sainte Louise
+                  dans le 20e arrondissement de Paris. Tout le long de mon lycée j'ai suivi
+                  l'option Arts Plastiques, que j'ai présenté au baccalauréat. C'est au lycée
+                  que j'ai découvert la programmation, notamment en développant des jeux en TI BASIC
+                  pour les calculatrices de la marque Texas Instrument, et qui rencontrèrent un
+                  certain succès dans ma promotion.
+                </p>
+                <p>
+                  Mes matières les plus fortes étaient les
+                  Mathématiques, les Arts Plastiques, la Littérature, et la Philosophie.
+                  Et j'ai finalement obtenu mon bac général scientifique en 2019, avec mention
+                  très bien.
+                </p>
+              </div>
             </div>
           </div>
           <!-- Fin Article -->
           <!-- Article -->
-          <div class="row article-body">
-            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 article-content">
+          <div class="row article">
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
               <h1 class="article-title">
                 Maintenant - IUT de Paris, section Informatique
               </h1>
-              <p>
-                J'étudie présentement à l'Institut Universitaire de Technologie pour un cursus
-                de 2 années en section Informatique. Bien que je savais déjà me débrouiller
-                en programmation, cette formation me permet de me mettre aux normes réelles du
-                développement logiciel, et d'acquérir les connaissances académiques requises pour mon
-                épanouissement dans ce domaine qui me passionne.
-              </p>
+              <div class="article-content">
+                <p>
+                  J'étudie présentement à l'Institut Universitaire de Technologie pour un cursus
+                  de 2 années en section Informatique. Bien que je savais déjà me débrouiller
+                  en programmation, cette formation me permet de me mettre aux normes réelles du
+                  développement logiciel, et d'acquérir les connaissances académiques requises pour mon
+                  épanouissement dans ce domaine qui me passionne.
+                </p>
+              </div>
             </div>
             <div class="col-xl-6 col-lg-7 col-md-8 col-sm-9  article-vignette">
               <img class="" src="assets/parisdescartes.png" desc="logo paris descartes"/>
@@ -159,106 +184,7 @@
             </h1>
           </div>
           <!-- Article -->
-          <div class="row article-body">
-            <div class="col-xl-9 col-lg-10 col-md-11 col-sm-12">
-              <h1 class="article-title">
-                Tableau des voyages
-              </h1>
-              <div class="table-container right-handed">
-                <table>
-                  <tr>
-                    <td class="table-category lighter">
-                      <i class="material-icons">assistant_photo</i>
-                    </td>
-                    <td class="table-category lighter">
-                      Royaume-Unis
-                    </td>
-                    <td class="table-category lighter">
-                      Espagne
-                    </td>
-                    <td class="table-category lighter">
-                      Canada
-                    </td>
-                    <td class="table-category lighter">
-                      Japon
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="table-category">
-                      <i class="material-icons">calendar_today</i>
-                    </td>
-                    <td>
-                      2013
-                    </td>
-                    <td>
-                      Souvent
-                    </td>
-                    <td>
-                      2015
-                    </td>
-                    <td>
-                      2018
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="table-category lighter">
-                      <i class="material-icons">timelapse</i>
-                    </td>
-                    <td class="lighter">
-                      2 semaines
-                    </td>
-                    <td class="lighter">
-                      ~1 semaine à chaque fois
-                    </td>
-                    <td class="lighter">
-                      2 semaines
-                    </td>
-                    <td class="lighter">
-                      2 semaines
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="table-category">
-                      <i class="material-icons">map</i>
-                    </td>
-                    <td>
-                      Plymouth, Londres
-                    </td>
-                    <td>
-                      Madrid, Barcelone
-                    </td>
-                    <td>
-                      Montréal, Québec, Niagara, Toronto
-                    </td>
-                    <td>
-                      Tokyo, Kyoto, Inari, Nahra, Hakone, Osaka
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="table-category lighter">
-                      <i class="material-icons">rate_review</i>
-                    </td>
-                    <td class="lighter">
-                      Super, mais faut pas être gastronome.
-                    </td>
-                    <td class="lighter">
-                      Madrid est une très belle ville.
-                    </td>
-                    <td class="lighter">
-                      Les chûtes du Niagara sont sublimes.
-                    </td>
-                    <td class="lighter">
-                      Mon plus beau voyage !
-                    </td>
-                  </tr>
-                </table>
-              </div>
-
-            </div>
-          </div>
-          <!-- Fin Article -->
-          <!-- Article -->
-          <div class="row article-body">
+          <div class="row article">
             <div class="col-xl-6 col-lg-7 col-md-7 col-sm-9 col-9">
               <h1 class="article-title">
                 Tableau des langues
@@ -325,6 +251,121 @@
             </div>
           </div>
           <!-- Fin Article -->
+          <!-- Article -->
+          <div class="row article">
+            <div class="col-xl-9 col-lg-10 col-md-11 col-sm-12">
+              <h1 class="article-title">
+                Tableau des voyages
+              </h1>
+              <div class="table-container right-handed">
+                <table>
+                  <tr>
+                    <td class="table-category lighter">
+                      <div class="hover-desc">
+                        Pays visité
+                      </div>
+                      <i class="material-icons">
+                        assistant_photo
+                      </i>
+                    </td>
+                    <td class="table-category lighter">
+                      Royaume-Unis
+                    </td>
+                    <td class="table-category lighter">
+                      Espagne
+                    </td>
+                    <td class="table-category lighter">
+                      Canada
+                    </td>
+                    <td class="table-category lighter">
+                      Japon
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-category">
+                      <i class="material-icons">calendar_today</i>
+                      <div class="hover-desc">
+                        Quand ?
+                      </div>
+                    </td>
+                    <td>
+                      2013
+                    </td>
+                    <td>
+                      Plusieurs fois
+                    </td>
+                    <td>
+                      2015
+                    </td>
+                    <td>
+                      2018
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-category lighter">
+                      <i class="material-icons">timelapse</i>
+                      <div class="hover-desc">
+                        Durée du voyage
+                      </div>
+                    </td>
+                    <td class="lighter">
+                      2 semaines
+                    </td>
+                    <td class="lighter">
+                      ~1 semaine à chaque fois
+                    </td>
+                    <td class="lighter">
+                      2 semaines
+                    </td>
+                    <td class="lighter">
+                      2 semaines
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-category">
+                      <i class="material-icons">map</i>
+                      <div class="hover-desc">
+                        Villes visitées
+                      </div>
+                    </td>
+                    <td>
+                      Plymouth, Londres
+                    </td>
+                    <td>
+                      Madrid, Barcelone
+                    </td>
+                    <td>
+                      Montréal, Québec, Niagara, Toronto
+                    </td>
+                    <td>
+                      Tokyo, Kyoto, Inari, Nahra, Hakone, Osaka
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-category lighter">
+                      <i class="material-icons">rate_review</i>
+                      <div class="hover-desc">
+                        À propos
+                      </div>
+                    </td>
+                    <td class="lighter">
+                      Peut-être que j'y retournerai un jour.
+                    </td>
+                    <td class="lighter">
+                      Madrid est une très belle ville.
+                    </td>
+                    <td class="lighter">
+                      Les chûtes du Niagara sont sublimes.
+                    </td>
+                    <td class="lighter">
+                      Mon plus beau voyage ! C'est un autre monde ...
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- Fin Article -->
         </div>
         <!-- Fin Catégorie Articles -->
       </div>
@@ -332,14 +373,14 @@
     <leftpane>
       <h1 id="Anicet">Anicet</h1>
       <h1 id="Nougaret">Nougaret</h1>
-      <div id="barres">
+      <div class="menu-container">
         <h1>
-          <i class="material-icons" id="open-menu">
+          <i class="material-icons" class="menu-barres">
             menu
           </i>
-          <span id="page-title">Expériences</span>
+          <span class="page-title">Expériences</span>
         </h1>
-        <nav id="nav-box">
+        <nav class="menu-nav">
           <ul>
             <!-- Bouton menu -->
             <li>

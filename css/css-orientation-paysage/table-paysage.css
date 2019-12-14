@@ -1,0 +1,49 @@
+.table-container {
+  margin-top: 2vw;
+  background-color: var(--2color);
+  border-left: solid 1vh var(--4color);
+  border-bottom: solid 1vh var(--2color);
+  box-shadow: 0 0 1vh var(--2color);
+}
+
+.table-container td {
+  position: relative;
+  background-color: var(--0color);
+  color: var(--2color);
+  font-weight: bolder;
+  padding: 2vh 2vh 2vh 2vh;
+  font-size: 1.5vw;
+}
+
+.table-container.right-handed td {
+  border-right: solid 0.2vh var(--2color);
+}
+
+.table-container.right-handed td.table-category {
+  border-right: none;
+}
+
+.table-container.bottom-handed td {
+  border-bottom: solid 0.2vh var(--2color);
+}
+
+.table-container.bottom-handed td.table-category {
+  border-bottom: none;
+}
+
+.table-container td .material-icons {
+  font-size: 3vw;
+}
+
+td.table-category {
+  background-color: var(--2color);
+  color: var(--4color);
+}
+
+td.lighter {
+  background-color: #cfc3b3;
+}
+
+td.table-category.lighter {
+  background-color: #1b6167;
+}

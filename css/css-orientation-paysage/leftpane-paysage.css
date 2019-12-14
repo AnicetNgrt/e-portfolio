@@ -1,0 +1,114 @@
+leftpane {
+  position: fixed;
+  width: 40vh;
+}
+
+leftpane h1 {
+  float: left;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  padding-left: 2vh;
+  color: var(--2color);
+  background-color: var(--3color);
+  border-radius: 0.3vh;
+  opacity: 1;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  font-size: 7vh;
+  font-weight: bold;
+}
+
+#Anicet {
+  font-weight: bold;
+}
+
+#Nougaret {
+  margin-bottom: 3vh;
+}
+
+.menu-container h1 {
+  display: none;
+}
+
+.page-title {
+  font-size: 5vh;
+  vertical-align: 1vh;
+}
+
+.menu-nav li {
+  display: inline;
+}
+
+.menu-button {
+  transition: color 0.3s;
+  float: left;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  width: 38vh;
+  margin-top: 0vh;
+  margin-left: 2vh;
+  padding-left: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-top-left-radius: 0.3vw;
+  border-bottom-left-radius: 0.3vw;
+  height: auto;
+  font-weight: bolder;
+}
+
+.menu-button h2 {
+  color: var(--3color);
+  font-size: 4vh;
+}
+
+.menu-button:hover {
+  box-shadow: 0vh 0 1vh var(--2color);
+  transition: color 0.1s;
+  background-color: var(--2color);
+  border-left: solid 1vh var(--4color);
+}
+
+.menu-button:hover h2 {
+  color: var(--4color);
+}
+
+.sub {
+  box-shadow: 0vh 0 1vh var(--2color);
+  z-index: -15;
+  display: none;
+  position: absolute;
+  background-color: var(--2color);
+  top: 22vh;
+  left: 39.5vh;
+  min-width: 25vh;
+  width: fit-content;
+  height: auto;
+  border-bottom-right-radius: 0.3vw;
+  border-top-right-radius: 0.3vw;
+}
+
+.sub-button h3 {
+  background-color: none;
+  color: var(--4color);
+  text-decoration: none;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  font-weight: bold;
+  font-size: 3vh;
+}
+
+.sub-button:hover h3 {
+  background-color: var(--3color);
+  color: var(--5color);
+}
+
+leftpane a:hover {
+  text-decoration: none;
+}
+
+.menu-nav li:hover .sub, .sub:hover {
+  display: block;
+}

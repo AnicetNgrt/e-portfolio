@@ -1,0 +1,9 @@
+rightpane {
+  z-index: -16;
+  position:absolute;
+  left: 40vh;
+  width: calc(100vw - 40vh);
+  height: fit-content;
+  padding-top: 7vh;
+  background-color: var(--3color);
+}

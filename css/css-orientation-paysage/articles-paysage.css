@@ -1,0 +1,70 @@
+.articles {
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
+}
+
+.article-category {
+  margin-bottom: 20vh;
+}
+
+.article-category-title {
+  margin-left: 2vh;
+  font-size: 4vw;
+  color: var(--2color);
+  font-weight: bolder;
+  border-radius: 0.3vw;
+  /*background-color: var(--2color);*/
+  padding: 1vh 1vh 1vh 1vh;
+  margin-bottom: 10vh;
+  font-weight: 900;
+}
+
+.article {
+  margin-left: 1vh;
+  margin-right: 2vh;
+  margin-bottom: 8vh;
+}
+
+.article-title {
+  padding: 1vh 1.5vh 1vh 1.5vh;
+  margin-left: 0;
+  margin-bottom: 3vh;
+  font-size: 4vh;
+  color: var(--4color);
+  border-left: solid 1vh var(--4color);
+  box-shadow: 0vw 0 1vh var(--2color);
+  max-width: calc(100% + 1vh);
+  width: max-content;
+  font-weight: bolder;
+  border-radius: 0.3vw;
+  line-height: 5vh;
+  background-color: var(--2color);
+}
+
+.article-content {
+  background-color: var(--0color);
+  border-bottom: solid 1vh var(--2color);
+  border-radius: 0.3vw;
+  padding: 1vh 1vh 2vh 2vh;
+  color: var(--2color);
+  font-weight: 500;
+  line-height: 4.1vh;
+  font-size: 2.8vh;
+  margin-bottom: 3vh;
+}
+
+.article-vignette {
+  position: relative;
+  margin-bottom: 3vh;
+}
+
+.article-vignette img {
+  border-radius: 0.3vw;
+  width: 100%;
+  filter: none;
+}
+
+.picture-shadow {
+  box-shadow: 0 0 1vh var(--2color);
+}

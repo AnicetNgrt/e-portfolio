@@ -1,0 +1,9 @@
+@import "leftpane-paysage.css";
+@import "rightpane-paysage.css";
+@import "articles-paysage.css";
+@import "table-paysage.css";
+@import "hover-desc-paysage.css";
+
+.paysage-hide {
+  display: none;
+}

@@ -1,0 +1,12 @@
+rightpane {
+  z-index: -16;
+  position:absolute;
+  top: 0vw;
+  left: 0vw;
+  width: 100vw;
+  height: fit-content;
+  padding-top: 7vw;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: var(--3color);
+}

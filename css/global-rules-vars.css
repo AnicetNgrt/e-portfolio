@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+
+  /* Variables de couleurs pour changer de palette rapidement */
+  /* Pas compatible avec IE9 */
+  --1color: #322619;
+  --2color: #175d62;
+  --3color: #3cc27b;
+  --4color: #e5c687;
+  --0color: #c5bfaf;
+  --5color: #ffffff;
+}
+
+* p {
+  color: inherit;
+  font-weight: inherit;
+  border-radius: inherit;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+a:link {
+  display: inline;
+  font-size: inherit;
+  color: #3c52bb;
+}
+
+a:visited {
+  font-size: inherit;
+  color: #4c009b;
+}
+
+.material-icons {
+  font-size: 125%;
+  display: inline-flex;
+  vertical-align: bottom;
+}
+
+body {
+  width: 100%;
+  font-size: 100%;
+  overflow-x: hidden;
+  background-color: var(--0color);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 2.3rem;
+}
+
+td {
+  /* Bug de border des td sur Firefox notamment */
+  background-clip: padding-box;
+}

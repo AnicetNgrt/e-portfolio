@@ -1,0 +1,157 @@
+leftpane {
+  position: fixed;
+  height: 10vh;
+  width: 100vw;
+}
+
+leftpane h1 {
+  float: left;
+  margin-top: 2vw;
+  margin-left: 1vw;
+  padding-left: 2vw;
+  color: var(--2color);
+  background-color: var(--3color);
+  border-radius: 0.3vw;
+  opacity: 1;
+  padding-left: 1vh;
+  padding-right: 2vh;
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+#Anicet, #Nougaret {
+  opacity: 0.7;
+  padding-top: 1vh; padding-bottom: 1vh;
+  float: right;
+}
+
+#Anicet {
+  margin-right: 2vw;
+}
+
+leftpane a:hover {
+  text-decoration: none;
+}
+
+.menu-nav li:hover .sub, .sub:hover {
+  transition: margin-left 0.2s, opacity 0.1s;
+  margin-top: 0vh;
+  opacity: 1;
+}
+
+.menu-container {
+  opacity: 0.7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  color: var(--2color);
+  border-radius: 0.3vh;
+}
+
+.menu-barres {
+  font-size: 8vw;
+}
+
+.page-title {
+  letter-spacing: -0.1vw;
+  font-size: 5vw;
+  vertical-align: 0.3vw;
+}
+
+.menu-container:hover {
+  opacity: 1;
+}
+
+.menu-container h1 {
+  padding-top: 1vh; padding-bottom: 1vh;
+}
+
+.menu-nav {
+  margin-top: -100vh;
+  position: fixed;
+  top: 12vw;
+  left: 0;
+  width: 40vw;
+  height: auto;
+  background-color: var(--3color);
+  border-radius: 0.3vh;
+  box-shadow: 0 0 1vw var(--2color);
+}
+
+.menu-nav li {
+  display: inline;
+}
+
+.menu-container:hover > .menu-nav {
+  margin-top: 0vh;
+}
+
+.menu-button {
+  float: left;
+  text-align: left;
+  text-decoration: none;
+  transition: opacity 0s;
+  background-color: none;
+  color: var(--2color);
+  opacity: 0;
+  position: relative;
+  width: 40.1vw;
+  padding-left: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  border-top-left-radius: 0.3vh;
+  border-bottom-left-radius: 0.3vh;
+  height: auto;
+  font-weight: bolder;
+}
+
+.menu-button h2 {
+  font-size: 4.5vw;
+}
+
+.menu-container:hover .menu-button {
+  transition: opacity 0s;
+  opacity: 1;
+}
+
+.menu-button:hover {
+  border-left: solid 1vw var(--4color);
+  background-color: var(--2color);
+}
+
+.menu-button:hover h2 {
+  color: var(--4color);
+}
+
+.sub {
+  box-shadow: 0vw 0 1vw var(--2color);
+  transition: margin-left 1s, opacity 0.3s;
+  opacity: 0;
+  position: absolute;
+  background-color: var(--2color);
+  top: 0vw;
+  left: 40vw;
+  min-width: 25vw;
+  width: fit-content;
+  height: auto;
+  margin-top: -100vh;
+  border-radius: 0.3vh;
+}
+
+.sub-button h3 {
+  background-color: none;
+  color: var(--4color);
+  text-decoration: none;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  font-weight: bold;
+  font-size: 4.5vw;
+}
+
+.sub-button:hover h3 {
+  background-color: var(--3color);
+  color: var(--5color);
+}

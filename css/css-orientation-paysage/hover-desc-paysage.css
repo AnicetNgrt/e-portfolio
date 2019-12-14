@@ -1,0 +1,40 @@
+*:hover>.hover-desc {
+  display: block;
+}
+
+.hover-desc {
+  opacity: 0.8;
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 5vh;
+  height: 5vh;
+  z-index: 1000;
+  font-size: 0vh;
+  padding: 1vh 1vh 1vh 1vh;
+  color: var(--2color);
+  border-radius: 0.3vw;
+  background-image: url("../../assets/comment-24px.svg");
+  background-size: 5vh 5vh;
+  background-repeat: no-repeat;
+  background-color: var(--0color);
+  box-shadow: 0 0 1vh var(--2color);
+}
+
+.hover-desc:hover {
+  background-color: var(--0color);
+  background-image: none;
+  border-bottom: solid 1vh var(--2color);
+  max-width: 40vh;
+  width: max-content;
+  height: auto;
+  opacity: 0.8;
+  font-size: 2.5vh;
+  line-height: normal;
+  opacity: 1;
+}
+
+.hover-desc p {
+  margin: 0;
+}
