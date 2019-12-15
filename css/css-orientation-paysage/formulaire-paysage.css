@@ -32,7 +32,22 @@ form label {
   color: var(--0color);
   font-weight: 500;
   line-height: 4.1vh;
-  font-size: 2.8vh;
+  font-size: 3vh;
+}
+
+form .meta-label {
+  text-align: left;
+  margin-top: 2.5vh;
+  margin-bottom: 1vh;
+  width: max-content;
+  color: var(--3color);
+}
+
+form label span.astérisque {
+  font-size: 2.5vh;
+  margin-left: 1vh;
+  vertical-align: super;
+  color: var(--3color);
 }
 
 form input, form textarea, form select {
@@ -62,10 +77,12 @@ form textarea {
 }
 
 form button {
+  float: right;
   border: none;
   padding: 0.5vh 1vh 0.5vh 1vh;
   border-radius: 0.3vw;
   margin-right: 2vh;
+  margin-top: 3vh;
   background-color: var(--2color);
   color: var(--4color);
   border-left: solid 1vh var(--4color);

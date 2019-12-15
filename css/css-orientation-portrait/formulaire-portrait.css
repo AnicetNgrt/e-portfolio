@@ -35,6 +35,22 @@ form label {
   font-size: 4vw;
 }
 
+form .meta-label {
+  text-align: left;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  width: max-content;
+  font-size: 3vw;
+  color: var(--3color);
+}
+
+form label span.astérisque {
+  font-size: 3vw;
+  margin-left: 1vw;
+  vertical-align: super;
+  color: var(--3color);
+}
+
 form input, form textarea, form select {
   position: relative;
   border: none;
@@ -64,9 +80,11 @@ form textarea {
 
 form button {
   border: none;
+  float: right;
   padding: 2vw 3vw 2vw 3vw;
   border-radius: 0.3vh;
   margin-right: 2vw;
+  margin-top: 3vw;
   background-color: var(--2color);
   color: var(--4color);
   border-left: solid 1vw var(--4color);

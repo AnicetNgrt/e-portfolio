@@ -40,16 +40,16 @@
           </div>
           <!-- Article -->
           <div class="row">
-            <div class="col-lg-3 col-md-12 col-sm-12 article-vignette">
+            <div class="col-xl-4 col-lg-5 article-vignette">
               <img class="picture-shadow" src="assets/anicet.PNG" desc="Mon portrait"/>
-              <div class="hover-desc">
+              <div class="hover-desc indirect">
                 Mon portrait en format PNG affiché dans le "cmd" de windows 10, après
                 avoir été rapeticé et converti en texte par un moteur graphique 2D-ANSI
                 pour CLI que j'ai codé en Python. Un pixel devient donc deux espaces avec
                 un surlignage coloré.
               </div>
             </div>
-            <div class="col-lg-8 col-md-12 col-sm-12 article-content">
+            <div class="col-xl-5 col-lg-7 col-12 article-content">
               <p>
                 Je suis Anicet Nougaret, j'habite en France et j'ai 18 ans. En ce moment j'étudie l'informatique à
                 l'Institut Universitaire de Technologie de Paris.
@@ -75,7 +75,7 @@
           <div class="row">
             <div class="col-lg-5 article-vignette">
               <img class="picture-shadow" src="assets/capture_code.PNG" desc="Code source HTML"/>
-              <div class="hover-desc">
+              <div class="hover-desc indirect outside-right">
                 Pour écrire de l'HTML et du CSS j'utilise
                 <a href="https://atom.io/">
                   Atom.
@@ -129,11 +129,11 @@
                     </div>
                     Formulaire de contact
                   </legend>
-                  <label for="nom">Nom</label>
-                  <input type="text" name="nom" id="nom" placeholder="Jeanne"/>
+                  <label for="nom">Nom<span class="astérisque">*</span></label>
+                  <input type="text" name="nom" id="nom" placeholder="Jeanne" minlength="4" required  />
                   <br />
-                  <label for="prenom">Prénom</label>
-                  <input type="text" name="prenom" id="prenom" placeholder="Dupont"/>
+                  <label for="prenom">Prénom<span class="astérisque">*</span></label>
+                  <input type="text" name="prenom" id="prenom" placeholder="Dupont" minlength="4" required/>
                   <br />
                   <label for="type">Vous-êtes</label>
                   <select name="type" id="type">
@@ -143,20 +143,22 @@
                     <option value="n/a">autre</option>
                   </select>
                   <br />
-                  <label for="message">Message</label>
+                  <label for="message">Message<span class="astérisque">*</span></label>
                   <br />
-                  <textarea name="message" id="message"></textarea>
+                  <textarea name="message" id="message" required></textarea>
                   <br />
                   <label for="email">
-                    <div class="hover-desc">
-                      <p>- Je ne partagerai jamais votre email avec qui que ce soit.</p>
-                      <p>- Votre email ne servira qu'à vous répondre en personne si il le faut.</p>
-                      <p>- Vous ne serez pas abonnés à quelque forme de "newsletter" que ce soit.</p>
-                    </div>
                     Email
                   </label>
-                  <input type="email" name="email" id="email" placeholder="Facultatif, pas de newsletter"/>
+                  <input type="email" name="email" id="email" placeholder="Pas de newsletter"/>
+                  <div class="hover-desc adjacent more-inside-left more-inside-top">
+                    <p>- Je ne partagerai jamais votre email avec qui que ce soit.</p>
+                    <p>- Votre email ne servira qu'à vous répondre en personne si il le faut.</p>
+                    <p>- Vous ne serez pas abonné à quelque forme de "newsletter" que ce soit.</p>
+                    <p>- L'envoi pourrait ne pas être encrypté, évitez les réseaux publics.</p>
+                  </div>
                   <br />
+                  <label class="meta-label">* Champs obligatoires.</label>
                   <button type="submit" name="envoyer" id="submit-form">
                     <i class="material-icons">
                       send
@@ -166,32 +168,11 @@
                 </fieldset>
               </form>
               <!-- Fin Formulaire -->
-              <!-- Un peu de Javascript pour faire marcher le formulaire -->
+              <!-- Javascript du formulaire -->
               <!-- Les données du formulaire sont renvoyées vers un google sheet -->
-              <!-- Source du tutoriel utilisé : https://les-enovateurs.com/donnees-formulaire-html-google-sheet/ -->
               <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
               <script type="text/javascript" src="js/jquery.serializeObject.min.js"></script>
-              <script type="text/javascript">
-                var $form = $('form#formulaire'),
-                    url = 'https://script.google.com/macros/s/AKfycbw0R9Ff0kaW61_e9VI4pH-VVFPaWSdizkKZfnweipE_55jkCh0/exec';
-
-                $('#submit-form').on('click', function(e) {
-                  e.preventDefault();
-                  var jqxhr = $.ajax({
-                    url: url,
-                    method: "GET",
-                    dataType: "json",
-                    data: $form.serializeObject()
-                  }).done(function(){
-                    $('#submit-form').html("<i class=\"material-icons\">done</i> C'est envoyé !");
-                    $('#submit-form').css("background-color","var(--3color)");
-                    $('#submit-form').css("color","var(--2color)");
-                    $('#submit-form').css("border-left","none");
-                    $('#submit-form').css("box-shadow","none");
-                    $('#submit-form').css("pointer-events","none");
-                  });
-                });
-              </script>
+              <script type="text/javascript" src="js/envoi_asynchrone.js"></script>
               <!-- Fin du Javascript -->
             </div>
           </div>
@@ -209,7 +190,7 @@
           <i class="material-icons" class="menu-barres">
             menu
           </i>
-          <span class="page-title">Acceuil</span>
+          <span class="page-title">Accueil</span>
         </h1>
         <nav class="menu-nav">
           <ul>
@@ -219,7 +200,7 @@
                 <h2><i class="material-icons">
                   home
                 </i>
-                Acceuil</h2>
+                Accueil</h2>
               </a>
               <ul class="sub">
                 <li>

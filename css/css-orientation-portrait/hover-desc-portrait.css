@@ -1,37 +1,63 @@
 .hover-desc {
+  transition: opacity 1s;
+  opacity: 0;
   text-align: left;
-  opacity: 0.8;
-  display: none;
+  padding: 0.5vw 0.5vw 0.5vw 2vw;
   position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 7vw;
-  height: 7vw;
-  z-index: 1000;
-  font-size: 0vw;
-  padding: 1vw 1vw 1vw 1vw;
+  background-color: var(--0color);
   color: var(--2color);
-  border-radius: 0.3vh;
-  background-image: url("../../assets/comment-24px.svg");
-  background-size: 7vw 7vw;
-  background-repeat: no-repeat;
-  background-color: var(--0color);
-  box-shadow: 0 0 1vw var(--2color);
-}
-
-.hover-desc:hover {
-  background-color: var(--0color);
   background-image: none;
   border-bottom: solid 1vw var(--2color);
-  max-width: 40vw;
+  box-shadow: 0vh 0 1vw rgba(0,0,50,0.5);
+  border-radius: 0.3vh;
+  max-width: 50vw;
   width: max-content;
+  font-weight: normal;
   height: auto;
-  opacity: 0.8;
-  font-size: 3vw;
+  top: 0%;
+  left: 0%;
+  font-size: 3.5vw;
+  z-index: -100;
+}
+
+td .hover-desc {
+  transition: opacity 0s;
+}
+
+.hover-desc p {
+  line-height: 3.5vw;
+  margin-bottom: 1vw;
+}
+
+.hover-desc.outside-top {top: -10%;}
+.hover-desc.outside-left {left: -10%;}
+
+.hover-desc.outside-bottom {top: 25%;}
+.hover-desc.outside-right {left: 25%;}
+
+.hover-desc.inside-top {top: 10%;}
+.hover-desc.inside-left {left: 10%;}
+
+.hover-desc.more-inside-top {top: 25%;}
+.hover-desc.more-inside-left {left: 25%;}
+
+.hover-desc.super-inside-top {top: 80%;}
+.hover-desc.super-inside-left {left: 80%;}
+
+*:hover > .hover-desc, *:active > .hover-desc {
+  transition: opacity 0.5s;
+  z-index: 100;
   opacity: 1;
 }
 
-*:hover > .hover-desc {
+*:hover > .hover-desc.adjacent, *:active > .hover-desc.adjacent {
+  transition: opacity 0.5s;
+  z-index: -100;
+  opacity: 0;
+}
+
+*:hover + .hover-desc.adjacent, *:active + .hover-desc.adjacent {
+  transition: opacity 0.5s;
   z-index: 100;
-  display: block;
+  opacity: 1;
 }

@@ -1,41 +1,95 @@
-*:hover>.hover-desc {
-  display: block;
-}
 
 .hover-desc {
+  z-index: -100;
+  opacity: 0;
   text-align: left;
-  opacity: 0.8;
-  display: none;
+  padding: 1vh 1vh 1vh 1.5vh;
   position: absolute;
-  top: 10%;
-  left: 10%;
+  background-color: var(--0color);
+  color: var(--2color);
+  background-image: none;
+  border-bottom: solid 1vh var(--2color);
+  box-shadow: 0vh 0 1vh rgba(0,0,50,0.5);
+  border-radius: 0.3vw;
+  max-width: 50vh;
+  width: max-content;
+  font-weight: normal;
+  height: auto;
+  top: 0%;
+  left: 0%;
+  font-size: 2.5vh;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.hover-desc.indirect {
+  transition: opacity 1s;
+  z-index: 100;
+  color: rgba(0,0,0,0);
+  opacity: 0;
   width: 5vh;
   height: 5vh;
-  z-index: 1000;
-  font-size: 0vh;
-  padding: 1vh 1vh 1vh 1vh;
-  color: var(--2color);
-  border-radius: 0.3vw;
+  letter-spacing: -1.1vh;
+  line-height: 0;
+  border-bottom: none;
   background-image: url("../../assets/comment-24px.svg");
   background-size: 5vh 5vh;
   background-repeat: no-repeat;
-  background-color: var(--0color);
-  box-shadow: 0 0 1vh var(--2color);
 }
 
-.hover-desc:hover {
-  background-color: var(--0color);
+.hover-desc.indirect a:link {color: rgba(0,0,0,0);}
+
+.hover-desc.indirect:hover {
+  transition: color 1s, letter-spacing 0.5s, line-height 0.5s;
+  color: var(--2color);
   background-image: none;
   border-bottom: solid 1vh var(--2color);
+  font-size: 2.5vh;
+  min-width: 5vh;
+  min-height: 5vh;
   max-width: 40vh;
   width: max-content;
   height: auto;
-  opacity: 0.8;
-  font-size: 2.5vh;
+  letter-spacing: normal;
   line-height: normal;
   opacity: 1;
 }
 
+.hover-desc.indirect:hover a:link {color: #3c52bb;}
+.hover-desc.indirect:hover a:visited {color: #4c009b;}
+
 .hover-desc p {
   margin: 0;
+}
+
+.hover-desc.outside-top {top: -10%;}
+.hover-desc.outside-left {left: -10%;}
+
+.hover-desc.outside-bottom {top: 101%;}
+.hover-desc.outside-right {left: 101%;}
+
+.hover-desc.inside-top {top: 10%;}
+.hover-desc.inside-left {left: 10%;}
+
+.hover-desc.more-inside-top {top: 25%;}
+.hover-desc.more-inside-left {left: 25%;}
+
+.hover-desc.super-inside-top {top: 80%;}
+.hover-desc.super-inside-left {left: 80%;}
+
+*:hover > .hover-desc, *:active > .hover-desc {
+  transition: opacity 1s;
+  z-index: 100;
+  opacity: 1;
+}
+
+*:hover > .hover-desc.adjacent, *:active > .hover-desc.adjacent {
+  z-index: -100;
+  opacity: 0;
+}
+
+*:hover + .hover-desc.adjacent, *:active + .hover-desc.adjacent {
+  transition: opacity 1s;
+  z-index: 100;
+  opacity: 1;
 }
