@@ -70,7 +70,7 @@ $button.on('click', évènement => {
 
       // modification du style du bouton
       $button.html("<i class=\"material-icons\">sentiment_dissatisfied</i> Échec de l'envoi.");
-      $button.css("background-color","red");
+      $button.css("background-color","#bb0011");
       $button.css("color","var(--2color)");
       $button.css("border-left","none");
       $button.css("box-shadow","none");
