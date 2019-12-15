@@ -43,7 +43,7 @@ leftpane h1 {
   transition: color 0.3s;
   float: left;
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: none;
   position: relative;
   width: 38vh;
   margin-top: 0vh;
@@ -63,8 +63,8 @@ leftpane h1 {
 }
 
 .menu-button:hover {
-  box-shadow: 0vh 0 1vh var(--2color);
   transition: color 0.1s;
+  box-shadow: 0vh 0 1vh rgba(0,0,50,0.5);
   background-color: var(--2color);
   border-left: solid 1vh var(--4color);
 }
@@ -74,18 +74,19 @@ leftpane h1 {
 }
 
 .sub {
-  box-shadow: 0vh 0 1vh var(--2color);
+  transition: background-color 0.3s;
+  box-shadow: 0vh 0 1vh rgba(0,0,50,0.5);
   z-index: -15;
   display: none;
   position: absolute;
   background-color: var(--2color);
   top: 22vh;
-  left: 39.5vh;
+  left: 40vh;
   min-width: 25vh;
   width: fit-content;
   height: auto;
-  border-bottom-right-radius: 0.3vw;
-  border-top-right-radius: 0.3vw;
+  border-radius: 0.6vw;
+  padding-bottom: 2.5vh;
 }
 
 .sub-button h3 {
@@ -101,6 +102,8 @@ leftpane h1 {
 }
 
 .sub-button:hover h3 {
+  transition: background-color 0.3s;
+  border-radius: 0.6vw;
   background-color: var(--3color);
   color: var(--5color);
 }

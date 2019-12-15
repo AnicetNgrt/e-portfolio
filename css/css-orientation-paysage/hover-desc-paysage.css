@@ -65,8 +65,8 @@
 .hover-desc.outside-top {top: -10%;}
 .hover-desc.outside-left {left: -10%;}
 
-.hover-desc.outside-bottom {top: 101%;}
-.hover-desc.outside-right {left: 101%;}
+.hover-desc.outside-bottom {top: 99%;}
+.hover-desc.outside-right {left: 99%;}
 
 .hover-desc.inside-top {top: 10%;}
 .hover-desc.inside-left {left: 10%;}
