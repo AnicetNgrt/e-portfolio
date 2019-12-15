@@ -13,6 +13,14 @@
   --5color: #ffffff;
 }
 
+.pass-down {
+  color: inherit;
+  font-weight: inherit;
+  border-radius: inherit;
+  line-height: inherit;
+  font-size: inherit;
+}
+
 * p {
   color: inherit;
   font-weight: inherit;
