@@ -1,31 +1,32 @@
 <!doctype html>
 <html lang="fr">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Info générales -->
-    <title>e-portfolio</title>
-    <meta name="description" content="Portfolio numérique d'Anicet Nougaret"/>
+  <!-- Info générales -->
+  <title>e-portfolio</title>
+  <meta name="description" content="Portfolio numérique d'Anicet Nougaret"/>
 
-    <!-- Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Polices d'écriture et icônes -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Questrial|Roboto+Mono|Staatliches&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <!-- Polices d'écriture et icônes -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Questrial|Roboto+Mono|Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
-    <!-- CSS commun global -->
-    <link rel="stylesheet" href="css/global-rules-vars.css"/>
-    <!-- CSS pour l'orientation paysage (ratio largeur/hauteur > 1) -->
-    <link rel="stylesheet" href="css/css-orientation-paysage/main-paysage.css" media="only screen and (min-aspect-ratio: 6/5)"/>
-    <!-- CSS pour l'orientation portrait (ratio largeur/hauteur < 1) -->
-    <link rel="stylesheet" href="css/css-orientation-portrait/main-portrait.css" media="only screen and (max-aspect-ratio: 6/5)"/>
-  </head>
-
+  <!-- CSS commun global -->
+  <link rel="stylesheet" href="css/global-rules-vars.css"/>
+  <!-- CSS pour l'orientation paysage sur les écrans orientés paysage par défaut (PC) -->
+  <link rel="stylesheet" href="css/css-orientation-paysage/main-paysage.css" media="screen and (min-device-aspect-ratio: 1/1)"/>
+  <!-- CSS pour l'orientation portrait sur les écrans orientés paysage par défaut (PC) -->
+  <link rel="stylesheet" href="css/css-orientation-portrait/main-portrait.css" media="screen and (min-device-aspect-ratio: 1/1) and (max-aspect-ratio: 8/10)"/>
+  <!-- CSS pour les écrans orientés portraits par défaut (mobiles) -->
+  <link rel="stylesheet" href="css/css-orientation-portrait/main-portrait.css" media="screen and (max-device-aspect-ratio: 1/1)"/>
+</head>
   <body>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <rightpane>
