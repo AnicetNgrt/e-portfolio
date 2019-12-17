@@ -1,7 +1,7 @@
 leftpane {
   position: fixed;
   height: 10vh;
-  width: 92vw;
+  width: 100vw;
 }
 
 leftpane h1 {
