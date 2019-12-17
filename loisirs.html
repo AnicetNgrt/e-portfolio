@@ -20,12 +20,10 @@
 
   <!-- CSS commun global -->
   <link rel="stylesheet" href="css/global-rules-vars.css"/>
-  <!-- CSS pour l'orientation paysage sur les écrans orientés paysage par défaut (PC) -->
-  <link rel="stylesheet" href="css/css-orientation-paysage/main-paysage.css" media="screen and (min-device-aspect-ratio: 1/1)"/>
-  <!-- CSS pour l'orientation portrait sur les écrans orientés paysage par défaut (PC) -->
-  <link rel="stylesheet" href="css/css-orientation-portrait/main-portrait.css" media="screen and (min-device-aspect-ratio: 1/1) and (max-aspect-ratio: 8/10)"/>
-  <!-- CSS pour les écrans orientés portraits par défaut (mobiles) -->
-  <link rel="stylesheet" href="css/css-orientation-portrait/main-portrait.css" media="screen and (max-device-aspect-ratio: 1/1)"/>
+  <!-- CSS pour l'orientation paysage (ratio largeur/hauteur > 1) -->
+  <link rel="stylesheet" href="css/css-orientation-paysage/main-paysage.css" media="only screen and (min-aspect-ratio: 6/5)"/>
+  <!-- CSS pour l'orientation portrait (ratio largeur/hauteur < 1) -->
+  <link rel="stylesheet" href="css/css-orientation-portrait/main-portrait.css" media="only screen and (max-aspect-ratio: 6/5)"/>
 </head>
   <body>
     <script src="bootstrap/js/bootstrap.min.js"></script>

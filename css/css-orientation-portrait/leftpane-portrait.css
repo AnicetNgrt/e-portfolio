@@ -1,7 +1,7 @@
 leftpane {
   position: fixed;
   height: 10vh;
-  width: 100vw;
+  width: 92vw;
 }
 
 leftpane h1 {
@@ -20,13 +20,7 @@ leftpane h1 {
 }
 
 #Anicet, #Nougaret {
-  opacity: 0.7;
-  padding-top: 1vh; padding-bottom: 1vh;
-  float: right;
-}
-
-#Anicet {
-  margin-right: 2vw;
+  display: none;
 }
 
 leftpane a:hover {
