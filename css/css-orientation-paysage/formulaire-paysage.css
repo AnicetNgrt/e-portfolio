@@ -1,4 +1,4 @@
-.form-container {
+form {
   box-shadow: 0 0 1vh var(--2color);
   background-color: var(--2color);
   border-left: solid 1vh var(--4color);
@@ -11,6 +11,7 @@
   margin-bottom: 3vh;
 }
 
+/* Style du titre du formulaire */
 form legend {
   padding: 0.5vh 1vh 0.5vh 1vh;
   border-radius: 0.3vw;
@@ -22,32 +23,9 @@ form legend {
   margin-bottom: 3vh;
 }
 
-form label {
-  position: relative;
-  text-align: right;
-  width: 20%;
-  padding: 0.5vh 1vh 0.5vh 1vh;
-  border-radius: 0.3vw;
-  margin-right: 2vh;
-  color: var(--0color);
-  font-weight: 500;
-  line-height: 4.1vh;
-  font-size: 3vh;
-}
-
-form .meta-label {
-  text-align: left;
-  margin-top: 2.5vh;
-  margin-bottom: 1vh;
-  width: max-content;
-  color: var(--3color);
-}
-
-form label span.astérisque {
-  font-size: 2.5vh;
-  margin-left: 1vh;
-  vertical-align: super;
-  color: var(--3color);
+/* Style des zones de saisie */
+form input {
+  width: 70%;
 }
 
 form input, form textarea, form select {
@@ -63,10 +41,6 @@ form input, form textarea, form select {
   margin-bottom: 3vh;
 }
 
-form input {
-  width: 70%;
-}
-
 form input:focus, form textarea:focus, form select:focus {
   background-color: var(--4color);
 }
@@ -76,6 +50,7 @@ form textarea {
   font-size: 2.5vh;
 }
 
+/* Style du bouton d'envoi du formulaire */
 form button {
   float: right;
   border: none;
@@ -102,7 +77,46 @@ form button:active {
   transform: scale(1.1);
 }
 
+/* Style des icônes dans les boutons de forulaire */
 form button .material-icons {
   vertical-align: middle;
   font-size: 4vh;
+}
+
+/* Style des titres des champs */
+form label {
+  position: relative;
+  text-align: right;
+  width: 20%;
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  border-radius: 0.3vw;
+  margin-right: 2vh;
+  color: var(--0color);
+  font-weight: 500;
+  line-height: 4.1vh;
+  font-size: 3vh;
+}
+
+/* Classe meta-label
+Correspond à une balise <label> qui sert de note de bas de page
+*/
+
+form label.meta-label {
+  text-align: left;
+  margin-top: 2.5vh;
+  margin-bottom: 1vh;
+  width: max-content;
+  color: var(--3color);
+}
+
+/* Classe astérisque
+Correspond à une balise <label> qui est annotée plus bas grâce à une astérisque
+en exposant.
+*/
+
+form label span.astérisque {
+  font-size: 2.5vh;
+  margin-left: 1vh;
+  vertical-align: super;
+  color: var(--3color);
 }

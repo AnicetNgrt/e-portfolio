@@ -1,3 +1,7 @@
+/* Classe hover-desc
+Zone de text qui s'affiche au niveau d'une balise lorsqu'elle est :hover ou
+:active et servant, par exemple, à donner des descriptions d'image.
+*/
 
 .hover-desc {
   z-index: -100;
@@ -21,6 +25,17 @@
   letter-spacing: normal;
   line-height: normal;
 }
+
+.hover-desc p {
+  margin: 0;
+}
+
+/* Classe indirect
+Une balise .hover-text.indirect est affichée en petit lorsque la div parent est
+:hover ou :active en paysage et doit être elle-même :hover pour afficher tout le texte.
+En format portrait, les .hover-desc.indirect se comportent en .hover-desc pour
+éviter d'avoir à cliquer sur des petites icônes sur mobile.
+*/
 
 .hover-desc.indirect {
   transition: opacity 1s;
@@ -58,9 +73,9 @@
 .hover-desc.indirect:hover a:link {color: #3c52bb;}
 .hover-desc.indirect:hover a:visited {color: #4c009b;}
 
-.hover-desc p {
-  margin: 0;
-}
+/* Classes de positionnement des hover-desc
+Sert à indiquer la position relative au parent du hover-desc dans l'HTML directement.
+*/
 
 .hover-desc.outside-top {top: -10%;}
 .hover-desc.outside-left {left: -10%;}
@@ -77,17 +92,28 @@
 .hover-desc.super-inside-top {top: 80%;}
 .hover-desc.super-inside-left {left: 80%;}
 
+/* Différents mécanismes d'ouverture des hover-desc
+*/
+
 *:hover > .hover-desc, *:active > .hover-desc {
   transition: opacity 1s;
   z-index: 100;
   opacity: 1;
 }
 
+/* Classe adjacent
+Un .hover-desc.adjacent n'est pas activé par le :hover de son parent, mais par
+le :hover de la balise adjacente. Utile pour afficher le hover-desc au-dessus
+ou dans un coin.
+*/
+
+/* Désactive l'affichage par le parent */
 *:hover > .hover-desc.adjacent, *:active > .hover-desc.adjacent {
   z-index: -100;
   opacity: 0;
 }
 
+/* Active l'affichage par la balise adjacente */
 *:hover + .hover-desc.adjacent, *:active + .hover-desc.adjacent {
   transition: opacity 1s;
   z-index: 100;

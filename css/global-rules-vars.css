@@ -1,3 +1,6 @@
+/* Styles globaux, communs à l'orientation paysage et portrait
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +8,7 @@
 
   /* Variables de couleurs pour changer de palette rapidement */
   /* Pas compatible avec IE9 */
+  /* Ne devrait servir que pour la phase de conception*/
   --1color: #322619;
   --2color: #175d62;
   --3color: #3cc27b;
@@ -13,6 +17,12 @@
   --5color: #ffffff;
 }
 
+/* Classe pass-down
+Classe s'appropriant le style du texte de son bloc parent pour que ses enfants
+en héritent. Utile si le style du texte est définit dans un parent éloigné d'une
+balise <p>
+*/
+
 .pass-down {
   color: inherit;
   font-weight: inherit;
@@ -20,6 +30,9 @@
   line-height: inherit;
   font-size: inherit;
 }
+
+/* Sert à faire hériter de force le style du texte des parents directs
+*/
 
 * p {
   color: inherit;
@@ -37,6 +50,9 @@
   font-size: inherit;
 }
 
+/* Style des liens
+*/
+
 a:link {
   display: inline;
   font-size: inherit;
@@ -48,11 +64,17 @@ a:visited {
   color: #4c009b;
 }
 
+/* Style des icônes
+*/
+
 .material-icons {
   font-size: 125%;
   display: inline-flex;
   vertical-align: bottom;
 }
+
+/* Style du corps du site
+*/
 
 body {
   width: 100%;
@@ -62,11 +84,14 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Égalisation des balises de titre pour gagner du temps ensuite
+*/
+
 h1, h2, h3, h4, h5, h6 {
   font-size: 2.3rem;
 }
 
+/* Corrige un problème de border invisible des td sur certains navigateurs */
 td {
-  /* Bug de border des td sur Firefox notamment */
   background-clip: padding-box;
 }

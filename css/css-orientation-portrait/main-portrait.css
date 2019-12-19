@@ -1,4 +1,9 @@
+/* Fichier CSS qui fait le noeud entre tous les autres fichiers CSS pour le site
+affiché en orientation portrait
+*/
+
 @import "leftpane-portrait.css";
+@import "menu-portrait.css";
 @import "rightpane-portrait.css";
 @import "articles-portrait.css";
 @import "table-portrait.css";

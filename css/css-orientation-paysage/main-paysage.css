@@ -1,4 +1,9 @@
+/* Fichier CSS qui fait le noeud entre tous les autres fichiers CSS pour le site
+affiché en orientation paysage
+*/
+
 @import "leftpane-paysage.css";
+@import "menu-paysage.css";
 @import "rightpane-paysage.css";
 @import "articles-paysage.css";
 @import "table-paysage.css";

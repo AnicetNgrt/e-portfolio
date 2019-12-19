@@ -1,3 +1,7 @@
+/* Classe table-container
+Correspond à la div englobant tout le tableau
+*/
+
 .table-container {
   margin-top: 2vw;
   background-color: var(--2color);
@@ -6,14 +10,10 @@
   box-shadow: 0 0 1vh var(--2color);
 }
 
-.table-container td {
-  position: relative;
-  background-color: var(--0color);
-  color: var(--2color);
-  font-weight: bolder;
-  padding: 2vh 2vh 2vh 2vh;
-  font-size: 1.5vw;
-}
+/* Classe right-handed
+Un .table-container.right-handed est un tableau orienté vers la droite qui se lit
+de haut en bas et ensuite de gauche à droite.
+*/
 
 .table-container.right-handed td {
   border-right: solid 0.2vh var(--2color);
@@ -23,6 +23,11 @@
   border-right: none;
 }
 
+/* Classe bottom-handed
+Un .table-container.bottom-handed est un tableau orienté vers le bas qui se lit
+de gauche à droite et ensuite de haut en bas.
+*/
+
 .table-container.bottom-handed td {
   border-bottom: solid 0.2vh var(--2color);
 }
@@ -31,14 +36,28 @@
   border-bottom: none;
 }
 
-.table-container td .material-icons {
-  font-size: 3vw;
+/* Style des cases des tableaux */
+td {
+  position: relative;
+  background-color: var(--0color);
+  color: var(--2color);
+  font-weight: bolder;
+  padding: 2vh 2vh 2vh 2vh;
+  font-size: 1.5vw;
 }
+
+/* Classe table-category
+Case qui correspond à un titre de colonne ou de rangée.
+*/
 
 td.table-category {
   background-color: var(--2color);
   color: var(--4color);
 }
+
+/* Classe lighter
+Case éclaircie pour renforcer le contraste et donc faciliter la lecture
+*/
 
 td.lighter {
   background-color: #cfc3b3;
@@ -46,4 +65,9 @@ td.lighter {
 
 td.table-category.lighter {
   background-color: #1b6167;
+}
+
+/* Style des icônes dans les balises <td> */
+td .material-icons {
+  font-size: 3vw;
 }

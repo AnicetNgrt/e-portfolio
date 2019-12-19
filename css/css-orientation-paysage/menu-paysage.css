@@ -1,0 +1,100 @@
+/* classe menu-container
+Correspond à la div qui englobe le menu tout entier
+*/
+
+.menu-container h1 {
+  display: none;
+}
+
+/* classe menu-nav
+Correspond à la balise <nav> qui contient le menu et le sous menu.
+*/
+
+.menu-nav li {
+  display: inline;
+}
+
+.menu-nav li:hover .sub, .sub:hover {
+  display: block;
+}
+
+/* classe menu-button
+Correspond à une div bouton du menu
+*/
+
+.menu-button {
+  transition: color 0.3s;
+  float: left;
+  text-decoration: none;
+  background-color: none;
+  position: relative;
+  width: 38vh;
+  margin-top: 0vh;
+  margin-left: 2vh;
+  padding-left: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-top-left-radius: 0.3vw;
+  border-bottom-left-radius: 0.3vw;
+  height: auto;
+  font-weight: bolder;
+}
+
+.menu-button h2 {
+  color: var(--3color);
+  font-size: 4vh;
+}
+
+.menu-button:hover {
+  transition: color 0.1s;
+  box-shadow: 0vh 0 1vh rgba(0,0,50,0.5);
+  background-color: var(--2color);
+  border-left: solid 1vh var(--4color);
+}
+
+.menu-button:hover h2 {
+  color: var(--4color);
+}
+
+/* classe sub
+Correspond à une balise <ul> englobant un sous-menu
+*/
+
+.sub {
+  transition: background-color 0.3s;
+  box-shadow: 0vh 0 1vh rgba(0,0,50,0.5);
+  z-index: -15;
+  display: none;
+  position: absolute;
+  background-color: var(--2color);
+  top: 22vh;
+  left: 40vh;
+  min-width: 25vh;
+  width: fit-content;
+  height: auto;
+  border-radius: 0.6vw;
+  padding-bottom: 2.5vh;
+}
+
+/* classe sub-button
+Correspond à une balise <a> du sous-menu
+*/
+
+.sub-button h3 {
+  background-color: none;
+  color: var(--4color);
+  text-decoration: none;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  font-weight: bold;
+  font-size: 3vh;
+}
+
+.sub-button:hover h3 {
+  transition: background-color 0.3s;
+  border-radius: 0.6vw;
+  background-color: var(--3color);
+  color: var(--5color);
+}

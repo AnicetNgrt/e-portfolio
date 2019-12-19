@@ -1,3 +1,8 @@
+/* Balise rightpane
+Contient tout le contenu de la page qui peut être parcouru de haut en bas et qui
+prend le plus de place dans la page.
+*/
+
 rightpane {
   z-index: -16;
   position:absolute;

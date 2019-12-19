@@ -1,3 +1,7 @@
+/* Balise leftpane
+Sert à englober l'interface supperposée fixe du site (menu, titre)
+*/
+
 leftpane {
   position: fixed;
   height: 10vh;
@@ -19,135 +23,23 @@ leftpane h1 {
   font-weight: bold;
 }
 
-#Anicet, #Nougaret {
-  display: none;
-}
-
 leftpane a:hover {
   text-decoration: none;
 }
 
-.menu-nav li:hover .sub, .sub:hover {
-  transition: margin-left 0.2s, opacity 0.1s;
-  margin-top: 0vh;
-  opacity: 1;
+/* Éléments du titre du site (visibles qu'en mode paysage)
+*/
+
+#Anicet, #Nougaret {
+  display: none;
 }
 
-.menu-container {
-  opacity: 0.7;
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  color: var(--2color);
-  border-radius: 0.3vh;
-}
-
-.menu-barres {
-  font-size: 8vw;
-}
+/* Classe page_title (visible qu'en mode portrait)
+Titre de la page (acceuil, blog...)
+*/
 
 .page-title {
   letter-spacing: -0.1vw;
   font-size: 5vw;
   vertical-align: 0.3vw;
-}
-
-.menu-container:hover {
-  opacity: 1;
-}
-
-.menu-container h1 {
-  padding-top: 1vh; padding-bottom: 1vh;
-}
-
-.menu-nav {
-  margin-top: -100vh;
-  position: fixed;
-  top: 12vw;
-  left: 1vw;
-  width: 40vw;
-  height: auto;
-  background-color: var(--3color);
-  border-radius: 1vh;
-  box-shadow: 0 0 1vw rgba(0,0,50,0.5);
-}
-
-.menu-nav li {
-  display: inline;
-}
-
-.menu-container:hover > .menu-nav {
-  margin-top: 0vh;
-}
-
-.menu-button {
-  float: left;
-  text-align: left;
-  text-decoration: none;
-  transition: opacity 0s;
-  background-color: none;
-  color: var(--2color);
-  opacity: 0;
-  position: relative;
-  width: 40.1vw;
-  padding-left: 2vw;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
-  border-top-left-radius: 0.3vh;
-  border-bottom-left-radius: 0.3vh;
-  height: auto;
-  font-weight: bolder;
-}
-
-.menu-button h2 {
-  font-size: 4.5vw;
-}
-
-.menu-container:hover .menu-button {
-  transition: opacity 0s;
-  opacity: 1;
-}
-
-.menu-button:hover {
-  border-radius: 1vh;
-  border-left: solid 1vw var(--4color);
-  background-color: var(--2color);
-}
-
-.menu-button:hover h2 {
-  color: var(--4color);
-}
-
-.sub {
-  box-shadow: 0vw 0 1vw rgba(0,0,50,0.5);
-  transition: margin-left 1s, opacity 0.3s;
-  opacity: 0;
-  position: absolute;
-  background-color: var(--2color);
-  top: 0vw;
-  left: 40vw;
-  min-width: 25vw;
-  width: fit-content;
-  height: auto;
-  margin-top: -100vh;
-  border-radius: 1vh;
-}
-
-.sub-button h3 {
-  background-color: none;
-  color: var(--4color);
-  text-decoration: none;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
-  font-weight: bold;
-  font-size: 4vw;
-}
-
-.sub-button:hover h3 {
-  border-radius: 1vh;
-  background-color: var(--3color);
-  color: var(--5color);
 }

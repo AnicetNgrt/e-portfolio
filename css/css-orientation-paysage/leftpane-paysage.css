@@ -1,3 +1,7 @@
+/* Balise leftpane
+Sert à englober l'interface supperposée fixe du site (menu, titre)
+*/
+
 leftpane {
   position: fixed;
   width: 40vh;
@@ -18,100 +22,17 @@ leftpane h1 {
   font-weight: bold;
 }
 
+leftpane a:hover {
+  text-decoration: none;
+}
+
+/* Éléments du titre de la page, (visibles qu'en mode paysage)
+*/
+
 #Anicet {
   font-weight: bold;
 }
 
 #Nougaret {
   margin-bottom: 3vh;
-}
-
-.menu-container h1 {
-  display: none;
-}
-
-.page-title {
-  font-size: 5vh;
-  vertical-align: 1vh;
-}
-
-.menu-nav li {
-  display: inline;
-}
-
-.menu-button {
-  transition: color 0.3s;
-  float: left;
-  text-decoration: none;
-  background-color: none;
-  position: relative;
-  width: 38vh;
-  margin-top: 0vh;
-  margin-left: 2vh;
-  padding-left: 2vh;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  border-top-left-radius: 0.3vw;
-  border-bottom-left-radius: 0.3vw;
-  height: auto;
-  font-weight: bolder;
-}
-
-.menu-button h2 {
-  color: var(--3color);
-  font-size: 4vh;
-}
-
-.menu-button:hover {
-  transition: color 0.1s;
-  box-shadow: 0vh 0 1vh rgba(0,0,50,0.5);
-  background-color: var(--2color);
-  border-left: solid 1vh var(--4color);
-}
-
-.menu-button:hover h2 {
-  color: var(--4color);
-}
-
-.sub {
-  transition: background-color 0.3s;
-  box-shadow: 0vh 0 1vh rgba(0,0,50,0.5);
-  z-index: -15;
-  display: none;
-  position: absolute;
-  background-color: var(--2color);
-  top: 22vh;
-  left: 40vh;
-  min-width: 25vh;
-  width: fit-content;
-  height: auto;
-  border-radius: 0.6vw;
-  padding-bottom: 2.5vh;
-}
-
-.sub-button h3 {
-  background-color: none;
-  color: var(--4color);
-  text-decoration: none;
-  padding-left: 2vh;
-  padding-right: 2vh;
-  padding-top: 2.5vh;
-  padding-bottom: 2.5vh;
-  font-weight: bold;
-  font-size: 3vh;
-}
-
-.sub-button:hover h3 {
-  transition: background-color 0.3s;
-  border-radius: 0.6vw;
-  background-color: var(--3color);
-  color: var(--5color);
-}
-
-leftpane a:hover {
-  text-decoration: none;
-}
-
-.menu-nav li:hover .sub, .sub:hover {
-  display: block;
 }

@@ -1,12 +1,24 @@
+/* Classe articles
+Correspond à la div qui contient tous les articles d'une page.
+*/
+
 .articles {
   margin-left: 2%;
   margin-right: 2%;
   width: 96%;
 }
 
+/* Classe article-category
+Correspond à un groupe d'articles
+*/
+
 .article-category {
   margin-bottom: 20vh;
 }
+
+/* Classe article-category-title
+Correspond au gros titre d'une catégorie d'articles
+*/
 
 .article-category-title {
   margin-left: 2vh;
@@ -14,17 +26,24 @@
   color: var(--2color);
   font-weight: bolder;
   border-radius: 0.3vw;
-  /*background-color: var(--2color);*/
   padding: 1vh 1vh 1vh 1vh;
   margin-bottom: 10vh;
   font-weight: 900;
 }
+
+/* Classe article
+Correspond à un seul article
+*/
 
 .article {
   margin-left: 1vh;
   margin-right: 2vh;
   margin-bottom: 8vh;
 }
+
+/* Classe article-title
+Correspond à un titre dans un article
+*/
 
 .article-title {
   padding: 1vh 1.5vh 1vh 1.5vh;
@@ -42,6 +61,10 @@
   background-color: var(--2color);
 }
 
+/* Classe article-content
+Correspond à une boite de texte d'un article
+*/
+
 .article-content {
   background-color: var(--0color);
   border-bottom: solid 1vh var(--2color);
@@ -54,6 +77,10 @@
   margin-bottom: 3vh;
 }
 
+/* Classe article-vignette
+Correspond à une illustration d'un article
+*/
+
 .article-vignette {
   position: relative;
   margin-bottom: 3vh;
@@ -64,6 +91,12 @@
   width: 100%;
   filter: none;
 }
+
+/* Classe picture-shadow
+Définit si une balise a une ombre (prévue pour les .article-vignette)
+Utile car certaines images ont un fond transparent et ne devraient donc pas
+être ombragées.
+*/
 
 .picture-shadow {
   box-shadow: 0 0 1vh var(--2color);
